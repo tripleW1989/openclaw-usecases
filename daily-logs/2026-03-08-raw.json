@@ -1,17 +1,335 @@
 {
-  "date": "2026-03-08",
-  "timestamp": "2026/3/8 13:06:04",
+  "collectDate": "2026-03-08",
+  "collectTime": "2026-03-08T22:01:00+08:00",
   "keywords": [
     "OpenClaw 实际应用场景",
     "OpenClaw use cases",
-    "OpenClaw 工作流 workflow",
-    "OpenClaw 自动化场景",
-    "OpenClaw AI agent 用例",
-    "OpenClaw 一人公司",
-    "OpenClaw 新媒体 内容创作",
-    "OpenClaw CRM 客户管理"
+    "OpenClaw 工作流",
+    "OpenClaw 自动化",
+    "OpenClaw AI agent"
   ],
-  "totalFound": 0,
-  "uniqueCount": 0,
-  "scenarios": []
+  "searchResults": {
+    "keyword_1_OpenClaw_实际应用场景": {
+      "totalResults": 15,
+      "sources": [
+        {
+          "title": "openclaw 有价值的使用场景有哪些 | EvoMap",
+          "url": "https://evomap.ai/bounty/cmlwd4d5v01qqrmtek3n784ef",
+          "siteName": "evomap.ai",
+          "date": "2026-02-21",
+          "summary": "OpenCLaw is valuable for robotics, automation, and educational projects, offering a low-cost, open-source alternative to proprietary robotic arms."
+        },
+        {
+          "title": "我研究了 OpenClaw 的 10 个真实用例，有些地方让我不安 | 人人都是产品经理",
+          "url": "https://www.woshipm.com/ai/6343295.html",
+          "siteName": "人人都是产品经理",
+          "date": "2026-02-23",
+          "summary": "OpenClaw 正在重新定义个人生产力的边界。从 30 分钟搭建定制 CRM 到 AI 专家团每日董事会，这套系统展示了如何将碎片化的工作流转化为自动化飞轮。"
+        },
+        {
+          "title": "OpenClaw 能干什么？一个重度用户的 10 个真实用例拆解_腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260223A044RX00",
+          "siteName": "腾讯网",
+          "date": "2026-02-23",
+          "summary": "Matthew Berman 最近出了一期视频，把他用 OpenClaw 搭建的所有用例一次性摊开了。不讲概念，全是实操。CRM、知识库、商业顾问团、安全审查、社交媒体追踪、视频选题流水线、每日简报、食物日记..."
+        },
+        {
+          "title": "OpenClaw: 高强度使用两周，这个 AI 工具颠覆了我的工作流 - 少数派",
+          "url": "https://sspai.com/post/106232",
+          "siteName": "少数派",
+          "date": "2026-02-11",
+          "summary": "OpenClaw 并非一个单纯的大语言模型，也不是一个单纯的 Coding CLI，它其实是一个运行在本地的「数字生命中枢」，可以成为我们的个人 AI 助手，也可以胜任公司中的部分工作岗位。"
+        },
+        {
+          "title": "6 个 OpenClaw 应用场景:2026 改变你的人生 - 今日头条",
+          "url": "https://www.toutiao.com/article/7609975881223406123/",
+          "siteName": "今日头条",
+          "date": "2026-02-23",
+          "summary": "我将分享 6 个 OpenClaw 应用场景，我个人保证这些场景适用于每个人。用例 1:第二大脑、用例 2:定制早间简报..."
+        },
+        {
+          "title": "OpenClaw 适配行业与落地实操全攻略_中华网",
+          "url": "https://mtz.china.com/touzi/2026/0304/220096.html",
+          "siteName": "中华网",
+          "date": "2026-03-04",
+          "summary": "8 类最适配 OpenClaw 的行业/领域：内容创作/新媒体/自媒体、电商/零售、教育培训、金融服务、医疗健康、法律合规、人力资源、房地产..."
+        }
+      ]
+    },
+    "keyword_2_OpenClaw_use_cases": {
+      "totalResults": 15,
+      "sources": [
+        {
+          "title": "OpenClaw 能干什么？一个重度用户的 10 个真实用例拆解_腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260223A044RX00",
+          "siteName": "腾讯网",
+          "date": "2026-02-23",
+          "summary": "自然语言 CRM、会议行动项自动追踪、第二大脑系统、定制早间简报、商业顾问团、安全审查自动化、社交媒体追踪、视频选题流水线、食物日记、日程管理..."
+        },
+        {
+          "title": "爆肝 2 天，用 GLM5 开发了 OpenClaw 接入微信 bot，已开源!|openclaw|命令提示符 | 插件_手机网易网",
+          "url": "https://m.163.com/dy/article/KLJF5UL50556FPPU.html",
+          "siteName": "网易",
+          "date": "2026-02-12",
+          "summary": "OpenClaw 接入微信个人号，文章总结存 Notion 知识库、群聊@总结上下文、自动搜集全网资讯、日程提醒、AI 女友 Clawra..."
+        },
+        {
+          "title": "OpenClaw 爆火两周后，它的用法已经比科幻世界还离谱了_腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260210A0281500",
+          "siteName": "腾讯网",
+          "date": "2026-02-10",
+          "summary": "OpenClaw 是一个跑在你自己电脑上的 AI Agent，拥有文件读写、终端命令、浏览器操控、邮件日历等系统级权限。采用无头架构作为后台守护进程运行，通过 WhatsApp、Telegram、Discord 等聊天工具与你交互。"
+        }
+      ]
+    },
+    "keyword_3_OpenClaw_工作流": {
+      "totalResults": 15,
+      "sources": [
+        {
+          "title": "OpenClaw 工作原理 - Michael 云擎 - 博客园",
+          "url": "https://www.cnblogs.com/cloudrivers/p/19613542",
+          "siteName": "博客园",
+          "date": "2026-02-13",
+          "summary": "OpenClaw 工作原理流程图每次会话的完整流程：启动—收到消息后，Gateway 自动将 8 个.md 文件注入为 System Prompt(AGENTS/SOUL/USER/TOOLS/IDENTITY/HEARTBEAT/MEMORY/BOOTSTRAP)"
+        },
+        {
+          "title": "OpenClaw: 高强度使用两周，这个 AI 工具颠覆了我的工作流 - 少数派",
+          "url": "https://sspai.com/post/106232",
+          "siteName": "少数派",
+          "date": "2026-02-11",
+          "summary": "一步一步成功地将自己的工作流在 OpenClaw 上重新构建后，OpenClaw 已经成为了我解决数字生活需求的第一选择。"
+        },
+        {
+          "title": "OpenClaw 大龙虾从新手到中级基础教程 | 人人都是产品经理",
+          "url": "https://www.woshipm.com/ai/6347348.html",
+          "siteName": "人人都是产品经理",
+          "date": "2026-03-04",
+          "summary": "OpenClaw 正在重新定义个人 AI 助理的边界。这款开源 AI Agent 不仅能对话，更能直接操作系统、自动化任务管理，并在本地保障数据安全。"
+        }
+      ]
+    },
+    "keyword_4_OpenClaw_自动化": {
+      "totalResults": 15,
+      "sources": [
+        {
+          "title": "搭建 OpenClaw 实现钉钉 AI 员工自动化 (一) - Joy_CShow - 博客园",
+          "url": "https://www.cnblogs.com/cj8988/p/19643978",
+          "siteName": "博客园",
+          "date": "2026-02-26",
+          "summary": "OpenClaw 是阿里云生态下的一款轻量级 AI 自动化框架，旨在帮助开发者快速将大语言模型 (LLM) 能力接入钉钉，打造可 7×24 小时在线的\"AI 员工\"。"
+        },
+        {
+          "title": "OpenClaw 智能体实战指南:Molili 让 AI 自动化触手可及_中华网",
+          "url": "https://tech.china.com/articles/20260303/202603031817756.html",
+          "siteName": "中华网",
+          "date": "2026-03-03",
+          "summary": "一位用户将 Polymarket 账户的 API Key 和 100 美元本金交给了 OpenClaw，并赋予了它自主交易的权限。一夜之间，账户余额从 100 美元飙升至 347 美元，实现了 2.5 倍的资产增长。"
+        },
+        {
+          "title": "OpenClaw 怎么赚钱?AI 自动化网赚玩法解析",
+          "url": "https://www.partnershare.cn/information/ipfly-quan-qiu-dai-li/5783",
+          "siteName": "PartnerShare",
+          "date": "2026-03-06",
+          "summary": "OpenClaw 常见赚钱玩法：联盟营销自动化、内容创作自动化、社交媒体运营自动化、数据分析与报告生成..."
+        }
+      ]
+    },
+    "keyword_5_OpenClaw_AI_agent": {
+      "totalResults": 15,
+      "sources": [
+        {
+          "title": "OpenClaw 同款青否 AI Agent 营销系统：打造你的 7x24 小时的 AI 员工!|agent|openclaw|小红书 | 用户需求 | 电脑 | 知名企业 | 营销系统_手机网易网",
+          "url": "https://m.163.com/dy/article/KMP5U82R0556IU7D.html",
+          "siteName": "网易",
+          "date": "2026-02-27",
+          "summary": "青否 AI 超级员工，7×24 小时替你动手干活的全链路营销 AI Agent。以【AI 获客+AI 引流+AI 销售】三位一体架构，重构企业营销体系。"
+        },
+        {
+          "title": "大模型赋能投研之十六:OpenClaw 搭建个人投研助理 (一).pdf - 文档下载 - 未来智库",
+          "url": "https://www.vzkoo.com/document/4636641172297617408.html",
+          "siteName": "未来智库",
+          "date": "2026-02-14",
+          "summary": "OpenClaw 是一款由程序员 Peter Steinberger 开发的开源 AI Agent 应用，2026 年 1 月 25 日在 GitHub 上发布后短时间内便获得 AI 社区高度关注。"
+        },
+        {
+          "title": "OpenClaw AI chatbots are running amok - these scientists are listening in",
+          "url": "https://www.nature.com/articles/d41586-026-00370-w",
+          "siteName": "Nature",
+          "date": "2026-02-06",
+          "summary": "OpenClaw is an open-source artificial-intelligence agent designed to assist users with everyday tasks, such as sending e-mails and managing their calendars."
+        },
+        {
+          "title": "OpenClaw 0-Click 漏洞致恶意网站可劫持开发者 AI Agent_腾讯新闻",
+          "url": "https://news.qq.com/rain/a/20260302A02E1V00",
+          "siteName": "腾讯网",
+          "date": "2026-03-02",
+          "summary": "Oasis 安全研究人员在 OpenClaw 中发现了一个关键的零交互漏洞。该漏洞允许任何恶意网站无需插件、扩展或用户操作即可静默获取开发者 AI Agent 的完全控制权。"
+        }
+      ]
+    }
+  },
+  "extractedScenarios": [
+    {
+      "id": "scenario_001",
+      "title": "自然语言 CRM - 30 分钟从零到可用",
+      "category": "CRM 客户管理",
+      "source": "腾讯新闻",
+      "url": "https://news.qq.com/rain/a/20260223A044RX00",
+      "date": "2026-02-23",
+      "description": "用自然语言告诉 OpenClaw「帮我建一个 CRM，从 Gmail、Google Calendar 和 Fathom 里提取数据」，30 分钟就能跑起来。系统每 30 分钟扫描邮件，每 5 分钟在工作时段检查 Fathom。最惊艳的细节：当你在其他场景时，CRM 会主动插嘴：「你之前和某个赞助商聊过类似话题，也许他们愿意赞助这期。」"
+    },
+    {
+      "id": "scenario_002",
+      "title": "会议行动项自动追踪",
+      "category": "工作流自动化",
+      "source": "人人都是产品经理",
+      "url": "https://www.woshipm.com/ai/6343295.html",
+      "date": "2026-02-23",
+      "description": "会议结束 → Fathom 转录全文 → OpenClaw 匹配 CRM 联系人 → 提取行动项 → 发 Telegram 审批 → 进 Todoist。不再遗漏任何会议承诺，自动关联相关联系人，审批流程自动化。"
+    },
+    {
+      "id": "scenario_003",
+      "title": "第二大脑系统",
+      "category": "知识管理",
+      "source": "今日头条",
+      "url": "https://www.toutiao.com/article/7609975881223406123/",
+      "date": "2026-02-23",
+      "description": "用 OpenClaw 建立第二大脑系统，只需要一条简单的短信就能保存信息。OpenClaw 拥有迄今为止任何 AI 工具中最好的记忆系统。它会记住你告诉它的每一件事情，可以随时查看和搜索每一次对话。"
+    },
+    {
+      "id": "scenario_004",
+      "title": "定制早间简报",
+      "category": "信息聚合",
+      "source": "今日头条",
+      "url": "https://www.toutiao.com/article/7609975881223406123/",
+      "date": "2026-02-23",
+      "description": "每天早上 8 点，机器人会自动发送一份完全定制化的早间简报，包含当天需要知道的一切：昨晚最大的 AI 新闻、视频创意建议、Mac 上的待办事项清单、日历提醒、重要联系人动态。"
+    },
+    {
+      "id": "scenario_005",
+      "title": "新媒体内容创作流水线",
+      "category": "内容创作",
+      "source": "中华网",
+      "url": "https://mtz.china.com/touzi/2026/0304/220096.html",
+      "date": "2026-03-04",
+      "description": "热点追踪 + 文案生成：每日定时抓取小红书、抖音、X 平台的行业热点，自动筛选低流量无效选题，生成适配多平台的文案。视频辅助制作：自动下载素材、提取字幕、生成封面关键帧。周报/快讯自动生成：订阅数十个信息源，自动过滤重复内容、去重总结。"
+    },
+    {
+      "id": "scenario_006",
+      "title": "AI 自主交易操盘手",
+      "category": "金融投资",
+      "source": "中华网",
+      "url": "https://tech.china.com/articles/20260303/202603031817756.html",
+      "date": "2026-03-03",
+      "description": "一位用户将 Polymarket 账户的 API Key 和 100 美元本金交给了 OpenClaw，并赋予了它自主交易的权限。OpenClaw 自主调取并分析比特币的历史走势，同时抓取 Twitter 上的海量情绪数据，结合专业的技术指标进行综合研判。一夜之间，账户余额从 100 美元飙升至 347 美元，实现了 2.5 倍的资产增长。"
+    },
+    {
+      "id": "scenario_007",
+      "title": "钉钉 AI 员工自动化",
+      "category": "企业办公",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/cj8988/p/19643978",
+      "date": "2026-02-26",
+      "description": "OpenClaw 是阿里云生态下的一款轻量级 AI 自动化框架，旨在帮助开发者快速将大语言模型 (LLM) 能力接入钉钉，打造可 7×24 小时在线的\"AI 员工\"。"
+    },
+    {
+      "id": "scenario_008",
+      "title": "微信个人号接入",
+      "category": "社交通讯",
+      "source": "网易",
+      "url": "https://m.163.com/dy/article/KLJF5UL50556FPPU.html",
+      "date": "2026-02-12",
+      "description": "爆肝 2 天，用 GLM5 开发了 OpenClaw 接入微信 bot。文章总结存 Notion 知识库、群聊@总结上下文、自动搜集全网资讯、日程提醒、AI 女友 Clawra 有独立人格和人设。"
+    },
+    {
+      "id": "scenario_009",
+      "title": "联盟营销自动化",
+      "category": "营销获客",
+      "source": "PartnerShare",
+      "url": "https://www.partnershare.cn/information/ipfly-quan-qiu-dai-li/5783",
+      "date": "2026-03-06",
+      "description": "OpenClaw 常见赚钱玩法：联盟营销自动化、内容创作自动化、社交媒体运营自动化、数据分析与报告生成。自动打开浏览器、自动注册账号、自动填写表单、自动发布内容、自动发送邮件、自动处理 Excel 数据。"
+    },
+    {
+      "id": "scenario_010",
+      "title": "全链路营销 AI Agent",
+      "category": "营销获客",
+      "source": "网易",
+      "url": "https://m.163.com/dy/article/KMP5U82R0556IU7D.html",
+      "date": "2026-02-27",
+      "description": "青否 AI 超级员工，7×24 小时替你动手干活的全链路营销 AI Agent。以【AI 获客+AI 引流+AI 销售】三位一体架构，重构企业营销体系。短视频生成、多平台自动发布、GEO 内容生成与自动发布、主动曝光引流、抖音 AI 客服自动接待、微信自动通过好友。"
+    },
+    {
+      "id": "scenario_011",
+      "title": "个人投研助理",
+      "category": "金融投资",
+      "source": "未来智库",
+      "url": "https://www.vzkoo.com/document/4636641172297617408.html",
+      "date": "2026-02-14",
+      "description": "OpenClaw 搭建个人投研助理，自动实现高自由度的智能化应用，完全文本对话形式就可以实现其他 Agent 产品需要通过代码、或是用工作流工具才能完成的复杂功能，兼顾易用性与专业性。"
+    },
+    {
+      "id": "scenario_012",
+      "title": "安全审查自动化",
+      "category": "安全审查",
+      "source": "腾讯新闻",
+      "url": "https://news.qq.com/rain/a/20260223A044RX00",
+      "date": "2026-02-23",
+      "description": "自动审查文档、代码、合同等内容的安全风险。上传文件到指定目录，OpenClaw 自动读取并分析，识别敏感信息、合规风险，生成审查报告，发送审批请求。"
+    },
+    {
+      "id": "scenario_013",
+      "title": "商业顾问团",
+      "category": "AI 专家团",
+      "source": "腾讯新闻",
+      "url": "https://news.qq.com/rain/a/20260223A044RX00",
+      "date": "2026-02-23",
+      "description": "创建多个 AI 专家角色，组成你的私人董事会：营销策略专家、财务顾问、法律顾问、技术顾问、人力资源专家。遇到决策问题时，让所有专家发表意见，综合各方面建议做出决策。"
+    },
+    {
+      "id": "scenario_014",
+      "title": "视频选题流水线",
+      "category": "内容创作",
+      "source": "腾讯新闻",
+      "url": "https://news.qq.com/rain/a/20260223A044RX00",
+      "date": "2026-02-23",
+      "description": "监控 YouTube、B 站、抖音的热门视频，分析话题趋势，结合 CRM 中的赞助商信息，生成选题建议，自动创建脚本大纲。不再为选题发愁，数据驱动的决策，与商业机会自动关联。"
+    },
+    {
+      "id": "scenario_015",
+      "title": "日程管理与提醒",
+      "category": "日程管理",
+      "source": "博客园",
+      "url": "https://www.cnblogs.com/aibi1/p/19680320",
+      "date": "2026-03-06",
+      "description": "从邮件、聊天记录中提取日期和任务，自动添加到日历，智能提醒（考虑交通时间、准备时间），冲突检测和调整建议。不再错过重要会议，智能时间管理，减少手动输入。"
+    }
+  ],
+  "statistics": {
+    "totalScenarios": 15,
+    "totalSources": 25,
+    "categories": [
+      "CRM 客户管理",
+      "工作流自动化",
+      "知识管理",
+      "信息聚合",
+      "内容创作",
+      "金融投资",
+      "企业办公",
+      "社交通讯",
+      "营销获客",
+      "安全审查",
+      "AI 专家团",
+      "日程管理"
+    ],
+    "topSources": [
+      "腾讯新闻",
+      "人人都是产品经理",
+      "今日头条",
+      "中华网",
+      "网易",
+      "少数派",
+      "博客园"
+    ]
+  }
 }
