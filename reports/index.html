@@ -15,41 +15,84 @@
       --bg: #F8FAFC;
       --text: #1E293B;
       --text-light: #64748B;
-      --glass-bg: rgba(255, 255, 255, 0.7);
-      --glass-border: rgba(255, 255, 255, 0.5);
-      --shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+      --glass-bg: rgba(255, 255, 255, 0.85);
+      --glass-border: rgba(255, 255, 255, 0.6);
+      --shadow: 0 8px 32px rgba(31, 38, 135, 0.12);
     }
     
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      /* 优化背景：柔和的浅色渐变 */
+      background: linear-gradient(180deg, #F0F4FF 0%, #E8EEFF 50%, #F5F3FF 100%);
+      background-attachment: fixed;
       min-height: 100vh;
       padding: 20px;
       color: var(--text);
+      position: relative;
+      overflow-x: hidden;
     }
     
-    .container { max-width: 1200px; margin: 0 auto; }
+    /* 添加装饰性背景元素 */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -50%;
+      right: -20%;
+      width: 80vw;
+      height: 80vw;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -40%;
+      left: -10%;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.06) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      position: relative;
+      z-index: 1;
+    }
     
     /* Header */
     .header {
       text-align: center;
-      padding: 40px 20px;
-      color: #fff;
+      padding: 50px 20px 40px;
       margin-bottom: 30px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      border: 1px solid var(--glass-border);
+      box-shadow: var(--shadow);
     }
     
     .header h1 {
       font-size: 36px;
       font-weight: 700;
+      background: linear-gradient(135deg, var(--primary) 0%, #7C3AED 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       margin-bottom: 12px;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     }
     
     .header .meta {
       font-size: 14px;
-      opacity: 0.95;
+      color: var(--text-light);
       font-weight: 500;
     }
     
@@ -69,22 +112,22 @@
     }
     
     .tab {
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.7);
       color: var(--text);
       padding: 12px 24px;
       border-radius: 14px;
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
-      border: 1px solid rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       backdrop-filter: blur(10px);
     }
     
     .tab:hover {
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.9);
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
     
     .tab.active {
@@ -121,8 +164,8 @@
     
     .scenario-card:hover {
       transform: translateY(-6px) scale(1.02);
-      box-shadow: 0 20px 60px rgba(31, 38, 135, 0.25);
-      border-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 20px 60px rgba(37, 99, 235, 0.15);
+      border-color: rgba(37, 99, 235, 0.3);
     }
     
     .scenario-card h3 {
@@ -159,7 +202,7 @@
     }
     
     .scenario-card .tag.source {
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(241, 245, 249, 0.9);
       color: var(--text-light);
       box-shadow: none;
     }
@@ -168,11 +211,11 @@
       line-height: 1.8;
       color: var(--text);
       font-size: 14px;
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(248, 250, 252, 0.7);
       padding: 18px;
       border-radius: 14px;
       margin-bottom: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(226, 232, 240, 0.6);
     }
     
     .scenario-card .summary strong {
@@ -204,13 +247,14 @@
     /* Footer */
     .footer {
       text-align: center;
-      color: rgba(255, 255, 255, 0.9);
+      color: var(--text-light);
       padding: 30px 20px;
       font-size: 13px;
       background: var(--glass-bg);
       backdrop-filter: blur(20px);
       border-radius: 20px;
       border: 1px solid var(--glass-border);
+      margin-bottom: 20px;
     }
     
     @keyframes slideUp {
