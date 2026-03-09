@@ -1,365 +1,124 @@
 {
   "collectDate": "2026-03-09",
-  "collectTime": "2026-03-09T10:00:00+08:00",
-  "keywords": [
+  "searchKeywords": [
     "OpenClaw 实际应用场景",
     "OpenClaw use cases",
     "OpenClaw 工作流",
     "OpenClaw 自动化",
     "OpenClaw AI agent"
   ],
-  "searchResults": {
-    "keyword_1_OpenClaw_实际应用场景": {
-      "totalResults": 10,
-      "sources": [
-        {
-          "title": "openclaw 有价值的使用场景有哪些 | EvoMap",
-          "url": "https://evomap.ai/bounty/cmlwd4d5v01qqrmtek3n784ef",
-          "siteName": "evomap.ai",
-          "date": "2026-02-21",
-          "summary": "OpenCLaw 有价值的使用场景讨论，社区征集实际落地案例"
-        },
-        {
-          "title": "OpenClaw 完整玩法指南：从零上手到高效开发 - 七牛云行业应用 - 博客园",
-          "url": "https://www.cnblogs.com/qiniushanghai/p/19675175",
-          "siteName": "博客园",
-          "date": "2026-03-05",
-          "summary": "OpenClaw 是七牛云提供的云端开发工作站镜像，预装了 Node.js、Python、Git、Docker 等主流开发工具，开发者无需手动配置环境即可直接在浏览器中编写、运行和部署代码"
-        },
-        {
-          "title": "我研究了 OpenClaw 的 10 个真实用例，有些地方让我不安 | 人人都是产品经理",
-          "url": "https://www.woshipm.com/ai/6343295.html",
-          "siteName": "人人都是产品经理",
-          "date": "2026-02-23",
-          "summary": "OpenClaw 正在重新定义个人生产力的边界。从 30 分钟搭建定制 CRM 到 AI 专家团每日董事会，这套系统展示了如何将碎片化的工作流转化为自动化飞轮"
-        },
-        {
-          "title": "OpenClaw 快速入门:10 分钟完成本地安装与配置 (附常用命令速查) - 程序员徐公 - 博客园",
-          "url": "https://www.cnblogs.com/gdutxiaoxu/p/19675485",
-          "siteName": "博客园",
-          "date": "2026-03-06",
-          "summary": "OpenClaw 是一个开源的个人 AI 助手项目，2026 年 1 月在 GitHub 上火了起来。和其他只能聊天的 AI 不同，OpenClaw 可以直接操作你的设备"
-        },
-        {
-          "title": "OpenClaw 能干什么？一个重度用户的 10 个真实用例拆解_腾讯新闻",
-          "url": "https://news.qq.com/rain/a/20260223A044RX00",
-          "siteName": "腾讯网",
-          "date": "2026-02-23",
-          "summary": "Matthew Berman 最近出了一期视频，把他用 OpenClaw 搭建的所有用例一次性摊开了。不讲概念，全是实操：CRM、知识库、商业顾问团、安全审查、社交媒体追踪、视频选题流水线、每日简报、食物日记"
-        },
-        {
-          "title": "OpenClaw: 高强度使用两周，这个 AI 工具颠覆了我的工作流 - 少数派",
-          "url": "https://sspai.com/post/106232",
-          "siteName": "少数派",
-          "date": "2026-02-11",
-          "summary": "OpenClaw 并非一个单纯的大语言模型，也不是一个单纯的 Coding CLI，它其实是一个运行在本地的「数字生命中枢」，可以成为我们的个人 AI 助手"
-        },
-        {
-          "title": "高强度使用两周，这个 AI 工具颠覆了我的工作流_凤凰网",
-          "url": "https://tech.ifeng.com/c/8r0dI0Sn2d3",
-          "siteName": "凤凰网",
-          "date": "2026-02-25",
-          "summary": "OpenClaw 是一款可以在自己设备上运行的个人 AI 助手，能够通过已有通讯工具进行交互"
-        },
-        {
-          "title": "OpenClaw 说明 | 立创开发板技术文档中心 - 新浪新闻",
-          "url": "https://k.sina.com.cn/article_7857201856_1d45362c001902y7qc.html",
-          "siteName": "新浪网",
-          "date": "2026-03-07",
-          "summary": "OpenClaw 是一款前沿的开源个人 AI 助手框架，旨在将人工智能的强大能力与用户的日常工作流深度融合。通过对接聊天平台 (如 WhatsApp、Telegram、Discord、Slack、Signal)"
-        },
-        {
-          "title": "如何看待 OpenClaw 的实测表现 - 今日头条",
-          "url": "https://www.toutiao.com/article/7610425165243007514/",
-          "siteName": "今日头条",
-          "date": "2026-02-24",
-          "summary": "OpenClaw 的实测表现表明，它目前是一个潜力巨大但尚不成熟、且存在显著风险的工具，远非宣传中的生产力神器"
-        },
-        {
-          "title": "从单一工具到「数字中枢」,写给普通人的 OpenClaw 使用指南_腾讯新闻",
-          "url": "https://news.qq.com/rain/a/20260225A03GOE00",
-          "siteName": "腾讯网",
-          "date": "2026-02-25",
-          "summary": "OpenClaw 使用指南，从单一工具到数字中枢的演进路径"
-        }
-      ]
-    },
-    "keyword_2_OpenClaw_use_cases": {
-      "totalResults": 10,
-      "sources": [
-        {
-          "title": "OpenClaw 项目常见问题解决方案-CSDN 博客",
-          "url": "https://blog.csdn.net/gitblog_00504/article/details/143879470",
-          "siteName": "CSDN",
-          "date": "2024-12-11",
-          "summary": "OpenClaw 项目常见问题解决方案，多平台支持"
-        },
-        {
-          "title": "openclaw 可以商用吗 openclaw 使用授权规则解析-PHP 中文网",
-          "url": "https://www.php.cn/faq/2160781.html",
-          "siteName": "php 中文网",
-          "date": "2026-03-03",
-          "summary": "openclaw 商用可行但受限于 MIT 许可证及第三方组件授权：核心代码可自由商用，但须保留声明;SaaS 服务需独立合规 API 调用"
-        },
-        {
-          "title": "爆肝 2 天，用 GLM5 开发了 OpenClaw 接入微信 bot，已开源! - 网易",
-          "url": "https://m.163.com/dy/article/KLJF5UL50556FPPU.html",
-          "siteName": "网易",
-          "date": "2026-02-12",
-          "summary": "OpenClaw 接入微信个人号，文章总结存 Notion 知识库、群聊@总结上下文、自动搜集全网资讯、日程提醒"
-        },
-        {
-          "title": "OpenClaw 完全指南：开源本地 AI 助手的核心概念、安装配置与使用场景 - 博客园",
-          "url": "https://www.cnblogs.com/qiniushanghai/p/19665050",
-          "siteName": "博客园",
-          "date": "2026-03-03",
-          "summary": "OpenClaw 是运行在本地设备上的开源 AI 个人助手，支持通过聊天工具与 AI 交互完成日常自动化任务"
-        }
-      ]
-    },
-    "keyword_3_OpenClaw_工作流": {
-      "totalResults": 10,
-      "sources": [
-        {
-          "title": "OpenClaw 工作原理 - Michael 云擎 - 博客园",
-          "url": "https://www.cnblogs.com/cloudrivers/p/19613542",
-          "siteName": "博客园",
-          "date": "2026-02-13",
-          "summary": "OpenClaw 工作原理流程图：每次会话的完整流程，启动后收到消息，Gateway 自动将 8 个.md 文件注入为 System Prompt"
-        },
-        {
-          "title": "OpenClaw 说明 | 立创开发板技术文档中心 - 新浪新闻",
-          "url": "https://k.sina.com.cn/article_7857201856_1d45362c001902y7qc.html",
-          "siteName": "新浪网",
-          "date": "2026-03-07",
-          "summary": "OpenClaw 旨在将人工智能的强大能力与用户的日常工作流深度融合"
-        },
-        {
-          "title": "当你把一个概率引擎当成流水线来用，结果只能是烧钱_腾讯新闻",
-          "url": "https://news.qq.com/rain/a/20260223A01QDK00",
-          "siteName": "腾讯网",
-          "date": "2026-02-23",
-          "summary": "一位老程序员深度评测 OpenClaw 后选择离开，核心问题不是安全漏洞，而是把语言模型当工作流引擎用这件事本身就是个错误"
-        },
-        {
-          "title": "OpenClaw 大龙虾从新手到中级基础教程 | 人人都是产品经理",
-          "url": "https://www.woshipm.com/ai/6347348.html",
-          "siteName": "人人都是产品经理",
-          "date": "2026-03-04",
-          "summary": "OpenClaw 正在重新定义个人 AI 助理的边界。这款开源 AI Agent 不仅能对话，更能直接操作系统、自动化任务管理，并在本地保障数据安全"
-        },
-        {
-          "title": "OpenClaw 完整安装与使用教程 (从 0 到 1 全指南)-PHP 中文网",
-          "url": "https://www.php.cn/faq/2052336.html",
-          "siteName": "php 中文网",
-          "date": "2026-01-31",
-          "summary": "openclaw 是一款开源个人 ai 智能体 (personal ai agent),核心优势为本地部署 + 系统级执行 + 全渠道交互"
-        }
-      ]
-    },
-    "keyword_4_OpenClaw_自动化": {
-      "totalResults": 10,
-      "sources": [
-        {
-          "title": "OpenClaw 完全指南：开源本地 AI 助手的核心概念、安装配置与使用场景 - 博客园",
-          "url": "https://www.cnblogs.com/qiniushanghai/p/19665050",
-          "siteName": "博客园",
-          "date": "2026-03-03",
-          "summary": "OpenClaw 支持通过聊天工具与 AI 交互完成日常自动化任务"
-        },
-        {
-          "title": "搭建 OpenClaw 实现钉钉 AI 员工自动化 (一) - Joy_CShow - 博客园",
-          "url": "https://www.cnblogs.com/cj8988/p/19643978",
-          "siteName": "博客园",
-          "date": "2026-02-26",
-          "summary": "OpenClaw(原 Moltbot/Clawdbot) 是阿里云生态下的一款轻量级 AI 自动化框架，旨在帮助开发者快速将大语言模型 (LLM) 能力接入钉钉，打造可 7×24 小时工作的 AI 员工"
-        },
-        {
-          "title": "OpenClaw API 文档中心 - 开源 AI 助手集成指南 - 新浪新闻",
-          "url": "https://k.sina.com.cn/article_7857201856_1d45362c001902xttw.html",
-          "siteName": "新浪网",
-          "date": "2026-03-07",
-          "summary": "OpenClaw 采用模块化架构，通过标准化的接口调度各种 LLM、通讯渠道和服务工具"
-        },
-        {
-          "title": "OpenClaw 下载 - 游侠软件",
-          "url": "https://soft.ali213.net/down/44106.html",
-          "siteName": "游侠网",
-          "date": "2026-03-03",
-          "summary": "OpenClaw 是一款开源可本地部署的个人 AI 智能体框架，允许用户通过聊天工具直接操控电脑执行文件整理、代码编写、邮件管理等任务"
-        },
-        {
-          "title": "OpenClaw 智能体实战指南:Molili 让 AI 自动化触手可及_中华网",
-          "url": "https://m.tech.china.com/articles/20260303/202603031817756.html",
-          "siteName": "中华网",
-          "date": "2026-03-03",
-          "summary": "OpenClaw 装上了，但我究竟能用它做什么？作为一款备受瞩目的 AI 智能体框架，提供实战指南"
-        },
-        {
-          "title": "OpenClaw(原 Clawdbot) - 开源免费的个人 AI 助手 | AI 工具集",
-          "url": "https://ai-bot.cn/sites/70880.html",
-          "siteName": "AI 工具集官网",
-          "date": "2026-01-27",
-          "summary": "OpenClaw 是开源免费的个人 AI 助手，能在个人电脑 (如 Mac、Windows、Linux) 上运行，支持通过 WhatsApp、Telegram 等交互"
-        }
-      ]
-    },
-    "keyword_5_OpenClaw_AI_agent": {
-      "totalResults": 10,
-      "sources": [
-        {
-          "title": "OpenClaw 同款青否 AI Agent 营销系统：打造你的 7x24 小时的 AI 员工! - 网易",
-          "url": "https://m.163.com/dy/article/KMP5U82R0556IU7D.html",
-          "siteName": "网易",
-          "date": "2026-02-27",
-          "summary": "OpenClaw 的出现颠覆我们对于 AI 的认知，它不是 ChatGPT 那种你问我答的工具。它是一个能 24 小时不停干活的 AI 员工"
-        },
-        {
-          "title": "OpenClaw:AI Agent 重磅进化！同步支持 Seedance 短视频! - 网易",
-          "url": "https://m.163.com/dy/article/KMMGB6360556IU7D.html",
-          "siteName": "网易",
-          "date": "2026-02-26",
-          "summary": "青否 AI 超级员工开工王炸!Agent 正式进化成 AI Agent，搭载 OpenClaw 同款核心能力!这是一支 7×24 小时在岗、能真正动手执行的全链路营销 AI 团队"
-        },
-        {
-          "title": "大模型赋能投研之十六:OpenClaw 搭建个人投研助理 (一).pdf - 未来智库",
-          "url": "https://www.vzkoo.com/document/4636641172297617408.html",
-          "siteName": "未来智库",
-          "date": "2026-02-14",
-          "summary": "大模型赋能投研之十六:OpenClaw 搭建个人投研助理，金融投研领域应用"
-        },
-        {
-          "title": "OpenClaw 技能系统实战指南：打造你的私人 AI 助手 - 修猿 - 博客园",
-          "url": "https://www.cnblogs.com/Xuannuo/p/19661477",
-          "siteName": "博客园",
-          "date": "2026-03-03",
-          "summary": "作为一名 AI 爱好者，我一直在寻找一个真正属于自己的私人 AI 助手。直到遇见了 OpenClaw——一个开源的、自托管的 AI 代理网关"
-        },
-        {
-          "title": "开源 AI 助理 openclaw(龙虾) 实战课 - 霍格沃兹测试开发学社 - 博客园",
-          "url": "https://www.cnblogs.com/hogwarts/p/19662032",
-          "siteName": "博客园",
-          "date": "2026-03-03",
-          "summary": "开源 AI 助理——OpenClaw(代号龙虾)，能帮你处理消息、操作软件、自动办公，甚至创造收益"
-        },
-        {
-          "title": "OpenClaw AI chatbots are running amok - these scientists are listening in - Nature",
-          "url": "https://www.nature.com/articles/d41586-026-00370-w",
-          "siteName": "Nature",
-          "date": "2026-02-06",
-          "summary": "OpenClaw is an open-source artificial-intelligence agent designed to assist users with everyday tasks"
-        }
-      ]
-    }
-  },
-  "scenarios": [
+  "sources": [
+    "GitHub openclaw/openclaw README",
+    "GitHub openclaw/openclaw Discussions"
+  ],
+  "extractedScenarios": [
     {
-      "title": "钉钉 AI 员工自动化",
-      "category": "企业自动化",
-      "source": "博客园",
-      "date": "2026-02-26",
-      "summary": "OpenClaw 接入钉钉，打造 7×24 小时工作的 AI 员工，处理消息、操作软件、自动办公",
-      "url": "https://www.cnblogs.com/cj8988/p/19643978",
-      "icon": "🤖"
+      "title": "SWAT: 基于 OpenClaw 的多智能体任务编排系统",
+      "category": "AI 专家团",
+      "source": "GitHub Discussions",
+      "date": "2026-03-09",
+      "summary": "用户 LangSensei 分享的多智能体任务编排系统，基于 OpenClaw 构建。支持将复杂任务分解给多个专业智能体协同完成，实现任务自动化流转和结果汇总。",
+      "url": "https://github.com/openclaw/openclaw/discussions/41068",
+      "icon": "🧑‍💼"
     },
     {
-      "title": "微信 Bot 集成",
+      "title": "OmniPermission: 移动端人机协同审批插件",
+      "category": "安全审查",
+      "source": "GitHub Discussions",
+      "date": "2026-03-09",
+      "summary": "用户 youki-martin 开发的高风险工具调用人机协同审批插件。当 AI 助手需要执行敏感操作（如文件删除、外部 API 调用）时，通过移动端推送通知请求用户确认，实现安全的人机协同。",
+      "url": "https://github.com/openclaw/openclaw/discussions/41070",
+      "icon": "🔒"
+    },
+    {
+      "title": "OpenClaw 文件保护层 + UI 仪表板",
+      "category": "安全审查",
+      "source": "GitHub Discussions",
+      "date": "2026-03-09",
+      "summary": "用户 griffithfly 构建的文件保护系统，为 OpenClaw 添加文件访问控制层，并提供可视化 UI 仪表板监控 AI 助手的文件操作行为，防止意外数据丢失。",
+      "url": "https://github.com/openclaw/openclaw/discussions/40997",
+      "icon": "🛡️"
+    },
+    {
+      "title": "OpenClaw PowerPack: 技能链与代理执行规范",
+      "category": "工作流自动化",
+      "source": "GitHub Discussions",
+      "date": "2026-03-09",
+      "summary": "非开发者用户 Nimo1987 分享的技能链编排方案，通过定义清晰的代理执行纪律，实现多个技能的有序调用和结果传递，适合复杂工作流自动化场景。",
+      "url": "https://github.com/openclaw/openclaw/discussions/40856",
+      "icon": "⚙️"
+    },
+    {
+      "title": "Vigil Voice Mode: 实时免提语音聊天",
       "category": "社交通讯",
-      "source": "网易",
-      "date": "2026-02-12",
-      "summary": "OpenClaw 接入微信个人号，实现文章总结存 Notion 知识库、群聊@总结上下文、自动搜集全网资讯、日程提醒",
-      "url": "https://m.163.com/dy/article/KLJF5UL50556FPPU.html",
+      "source": "GitHub Discussions",
+      "date": "2026-03-08",
+      "summary": "用户 tituss-bit 开发的实时免提语音聊天系统，基于 OpenClaw 的 Voice Wake 和 Talk Mode 功能，支持连续语音对话，适用于驾驶、运动等双手占用场景。",
+      "url": "https://github.com/openclaw/openclaw/discussions/40284",
+      "icon": "🎙️"
+    },
+    {
+      "title": "GuardClaw: 本地代理自适应安全中间件",
+      "category": "安全审查",
+      "source": "GitHub Discussions",
+      "date": "2026-02-18",
+      "summary": "用户 acria9 提出的自适应安全中间件方案，为本地运行的 AI 代理提供动态安全策略，根据上下文风险等级自动调整工具调用权限和审计级别。",
+      "url": "https://github.com/openclaw/openclaw/discussions/19803",
+      "icon": "🔐"
+    },
+    {
+      "title": "多通道消息聚合与路由",
+      "category": "社交通讯",
+      "source": "OpenClaw 官方文档",
+      "date": "2026-03-09",
+      "summary": "OpenClaw 核心功能，支持 WhatsApp、Telegram、Slack、Discord、Google Chat、Signal、iMessage、IRC、Microsoft Teams、Matrix、飞书、LINE 等 20+ 消息平台，实现统一收件箱和智能路由。",
+      "url": "https://github.com/openclaw/openclaw",
       "icon": "💬"
     },
     {
-      "title": "个人投研助理",
-      "category": "金融服务",
-      "source": "未来智库",
-      "date": "2026-02-14",
-      "summary": "使用 OpenClaw 搭建个人投研助理，大模型赋能金融投研领域",
-      "url": "https://www.vzkoo.com/document/4636641172297617408.html",
-      "icon": "📈"
-    },
-    {
-      "title": "AI 营销系统",
-      "category": "营销自动化",
-      "source": "网易",
-      "date": "2026-02-27",
-      "summary": "青否 AI Agent 营销系统搭载 OpenClaw 同款核心能力，打造 7x24 小时 AI 员工，支持 Seedance 短视频生成",
-      "url": "https://m.163.com/dy/article/KMP5U82R0556IU7D.html",
-      "icon": "📱"
-    },
-    {
-      "title": "云端开发工作站",
-      "category": "开发工具",
-      "source": "博客园",
-      "date": "2026-03-05",
-      "summary": "七牛云提供 OpenClaw 云端开发工作站镜像，预装 Node.js、Python、Git、Docker 等工具，浏览器中直接编写、运行和部署代码",
-      "url": "https://www.cnblogs.com/qiniushanghai/p/19675175",
-      "icon": "💻"
-    },
-    {
-      "title": "私人 AI 助手技能系统",
-      "category": "个人效率",
-      "source": "博客园",
-      "date": "2026-03-03",
-      "summary": "利用 OpenClaw 的技能系统，打造强大的私人 AI 助手，自托管 AI 代理网关",
-      "url": "https://www.cnblogs.com/Xuannuo/p/19661477",
-      "icon": "🛠️"
-    },
-    {
-      "title": "定制 CRM 系统",
-      "category": "企业管理",
-      "source": "人人都是产品经理",
-      "date": "2026-02-23",
-      "summary": "30 分钟搭建定制 CRM，将碎片化的工作流转化为自动化飞轮",
-      "url": "https://www.woshipm.com/ai/6343295.html",
-      "icon": "📊"
-    },
-    {
-      "title": "AI 专家团每日董事会",
-      "category": "决策支持",
-      "source": "人人都是产品经理",
-      "date": "2026-02-23",
-      "summary": "组建 AI 专家团进行每日董事会决策，多角色协同分析",
-      "url": "https://www.woshipm.com/ai/6343295.html",
-      "icon": "👥"
-    },
-    {
-      "title": "社交媒体追踪",
-      "category": "内容运营",
-      "source": "腾讯网",
-      "date": "2026-02-23",
-      "summary": "自动追踪社交媒体动态，监控品牌提及和行业动态",
-      "url": "https://news.qq.com/rain/a/20260223A044RX00",
-      "icon": "📣"
-    },
-    {
-      "title": "视频选题流水线",
-      "category": "内容创作",
-      "source": "腾讯网",
-      "date": "2026-02-23",
-      "summary": "自动化视频选题流程，从热点发现到内容规划",
-      "url": "https://news.qq.com/rain/a/20260223A044RX00",
-      "icon": "🎬"
-    },
-    {
-      "title": "每日简报自动生成",
-      "category": "信息聚合",
-      "source": "腾讯网",
-      "date": "2026-02-23",
-      "summary": "定制早间简报，自动搜集整理重要信息",
-      "url": "https://news.qq.com/rain/a/20260223A044RX00",
-      "icon": "📰"
-    },
-    {
-      "title": "第二大脑系统",
+      "title": "Live Canvas 可视化工作空间",
       "category": "知识管理",
-      "source": "少数派",
-      "date": "2026-02-11",
-      "summary": "构建个人第二大脑，实现知识沉淀和智能检索",
-      "url": "https://sspai.com/post/106232",
-      "icon": "🧠"
+      "source": "OpenClaw 官方文档",
+      "date": "2026-03-09",
+      "summary": "OpenClaw 的 Canvas 功能提供 agent 驱动的可视化工作空间，支持 A2UI 协议，可实时渲染和交互，适用于代码审查、数据分析、设计协作等场景。",
+      "url": "https://docs.openclaw.ai/platforms/mac/canvas",
+      "icon": "🎨"
+    },
+    {
+      "title": "Voice Wake + Talk Mode 语音交互",
+      "category": "社交通讯",
+      "source": "OpenClaw 官方文档",
+      "date": "2026-03-09",
+      "summary": "macOS/iOS 语音唤醒 + Android 连续语音对话模式，支持 ElevenLabs 高质量 TTS 和系统 TTS 降级，实现自然的语音交互体验。",
+      "url": "https://docs.openclaw.ai/nodes/voicewake",
+      "icon": "🗣️"
+    },
+    {
+      "title": "多智能体路由与隔离",
+      "category": "AI 专家团",
+      "source": "OpenClaw 官方文档",
+      "date": "2026-03-09",
+      "summary": "根据入站通道/账户/对等方路由到隔离的智能体，每个智能体有独立的工作区和会话，支持为不同用户或场景配置专属 AI 助手。",
+      "url": "https://docs.openclaw.ai/gateway/configuration",
+      "icon": "🔀"
+    },
+    {
+      "title": "浏览器自动化控制",
+      "category": "工作流自动化",
+      "source": "OpenClaw 官方文档",
+      "date": "2026-03-09",
+      "summary": "专用的 OpenClaw Chrome/Chromium 浏览器控制，支持页面快照、UI 操作、文件上传、多配置文件，可实现网页数据抓取、表单填写、自动化测试等任务。",
+      "url": "https://docs.openclaw.ai/tools/browser",
+      "icon": "🌐"
+    },
+    {
+      "title": "移动设备节点控制",
+      "category": "工作流自动化",
+      "source": "OpenClaw 官方文档",
+      "date": "2026-03-09",
+      "summary": "iOS/Android 节点支持相机拍摄、屏幕录制、通知管理、位置获取、照片访问、联系人/日历/短信读取等，实现移动设备远程控制和自动化。",
+      "url": "https://docs.openclaw.ai/nodes",
+      "icon": "📱"
     }
   ]
 }
