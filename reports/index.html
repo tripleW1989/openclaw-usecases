@@ -3,661 +3,379 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🦞 OpenClaw 可落地场景日报</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>OpenClaw 场景日报</title>
   <style>
-    :root {
-      --primary: #667eea;
-      --primary-dark: #764ba2;
-      --success: #10b981;
-      --warning: #f59e0b;
-      --danger: #ef4444;
-      --gray-50: #f9fafb;
-      --gray-100: #f3f4f6;
-      --gray-200: #e5e7eb;
-      --gray-300: #d1d5db;
-      --gray-600: #4b5563;
-      --gray-700: #374151;
-      --gray-900: #111827;
-    }
-    
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       min-height: 100vh;
-      padding: 0;
-      line-height: 1.6;
-      color: var(--gray-700);
+      padding: 20px;
     }
     
-    .container { max-width: 1400px; margin: 0 auto; padding: 40px 20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
     
-    /* Hero Section */
-    .hero {
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(20px);
-      padding: 60px 40px;
-      border-radius: 32px;
-      margin-bottom: 40px;
-      box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
+    /* Header - 简洁 */
+    .header {
       text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -50%;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    
-    .hero h1 {
-      font-size: 48px;
-      font-weight: 800;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 16px;
-      letter-spacing: -0.02em;
-    }
-    
-    .hero .subtitle {
-      font-size: 18px;
-      color: var(--gray-600);
-      margin-bottom: 32px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .hero .meta {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      margin-top: 32px;
-    }
-    
-    .hero .meta-item {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 28px;
-      font-size: 15px;
-      font-weight: 600;
-      box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
-    }
-    
-    /* Navigation */
-    .nav-tabs {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .nav-tab {
-      background: rgba(255, 255, 255, 0.95);
-      color: var(--gray-700);
-      padding: 14px 28px;
-      border-radius: 16px;
-      font-size: 15px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-    
-    .nav-tab:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    }
-    
-    .nav-tab.active {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px 0 30px;
       color: #fff;
     }
     
-    /* Stats Grid */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      margin-bottom: 48px;
-    }
-    
-    .stat-card {
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(10px);
-      padding: 32px;
-      border-radius: 24px;
-      text-align: center;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-      transition: all 0.3s;
-    }
-    
-    .stat-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-    }
-    
-    .stat-value {
-      font-size: 56px;
-      font-weight: 800;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      line-height: 1;
+    .header h1 {
+      font-size: 28px;
+      font-weight: 600;
       margin-bottom: 8px;
     }
     
-    .stat-label {
-      font-size: 15px;
-      color: var(--gray-600);
-      font-weight: 500;
+    .header .meta {
+      font-size: 13px;
+      opacity: 0.9;
     }
     
-    /* Section Title */
-    .section-title {
-      font-size: 32px;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 32px;
+    /* Tabs */
+    .tabs {
       display: flex;
-      align-items: center;
-      gap: 12px;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Category Tags */
-    .category-tags {
-      display: flex;
-      gap: 12px;
+      gap: 8px;
+      margin-bottom: 30px;
       flex-wrap: wrap;
-      margin-bottom: 40px;
       justify-content: center;
     }
     
-    .category-tag {
-      background: rgba(255, 255, 255, 0.98);
-      color: var(--gray-700);
+    .tab {
+      background: rgba(255, 255, 255, 0.9);
+      color: #667eea;
       padding: 10px 20px;
       border-radius: 20px;
       font-size: 14px;
-      font-weight: 600;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
       transition: all 0.2s;
     }
     
-    .category-tag:hover {
+    .tab:hover {
+      background: #fff;
       transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    .tab.active {
+      background: #fff;
+      color: #764ba2;
+      font-weight: 600;
     }
     
     /* Scenarios Grid */
     .scenarios-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      gap: 24px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 16px;
     }
     
     .scenario-card {
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(10px);
-      border-radius: 24px;
-      padding: 32px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
       transition: all 0.3s;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      display: flex;
-      flex-direction: column;
+      display: none;
+    }
+    
+    .scenario-card.show {
+      display: block;
+      animation: fadeIn 0.3s ease;
     }
     
     .scenario-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 25px 80px rgba(102, 126, 234, 0.25);
-      border-color: var(--primary);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
     }
     
     .scenario-card h3 {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--gray-900);
-      margin-bottom: 16px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 12px;
       display: flex;
       align-items: flex-start;
-      gap: 12px;
+      gap: 10px;
       line-height: 1.4;
     }
     
     .scenario-card .icon {
-      font-size: 28px;
+      font-size: 22px;
       flex-shrink: 0;
     }
     
     .scenario-card .meta {
       display: flex;
-      gap: 10px;
+      gap: 8px;
+      margin-bottom: 16px;
       flex-wrap: wrap;
-      margin-bottom: 20px;
     }
     
     .scenario-card .tag {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: #fff;
-      padding: 6px 14px;
-      border-radius: 12px;
-      font-size: 12px;
-      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 500;
     }
     
     .scenario-card .tag.source {
-      background: var(--gray-100);
-      color: var(--gray-600);
+      background: #f0f0f0;
+      color: #666;
     }
     
     .scenario-card .summary {
-      flex: 1;
-      line-height: 1.8;
-      color: var(--gray-600);
-      font-size: 15px;
-      background: var(--gray-50);
-      padding: 20px;
-      border-radius: 16px;
-      border-left: 4px solid var(--primary);
-      margin-bottom: 20px;
+      line-height: 1.7;
+      color: #444;
+      font-size: 14px;
+      background: #f9f9f9;
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 16px;
     }
     
-    .scenario-card .actions {
-      display: flex;
-      gap: 12px;
+    .scenario-card .summary strong {
+      color: #667eea;
     }
     
     .scenario-card .btn {
-      flex: 1;
-      padding: 12px 20px;
-      border-radius: 14px;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      text-align: center;
-      transition: all 0.2s;
-      border: none;
-      cursor: pointer;
-    }
-    
-    .scenario-card .btn-primary {
+      display: inline-block;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: #fff;
-      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s;
     }
     
-    .scenario-card .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-    }
-    
-    .scenario-card .btn-secondary {
-      background: var(--gray-100);
-      color: var(--gray-700);
-    }
-    
-    .scenario-card .btn-secondary:hover {
-      background: var(--gray-200);
+    .scenario-card .btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
     }
     
     /* Footer */
     .footer {
       text-align: center;
-      color: rgba(255, 255, 255, 0.9);
-      padding: 40px 20px;
-      margin-top: 60px;
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 24px;
+      color: rgba(255, 255, 255, 0.8);
+      padding: 30px 0;
+      font-size: 12px;
     }
     
-    .footer p {
-      margin: 8px 0;
-      font-size: 14px;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     
-    /* Responsive */
     @media (max-width: 768px) {
-      .container { padding: 20px 12px; }
-      .hero { padding: 40px 24px; }
-      .hero h1 { font-size: 32px; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
       .scenarios-grid { grid-template-columns: 1fr; }
-      .section-title { font-size: 24px; }
+      .header h1 { font-size: 22px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Hero Section -->
-    <div class="hero">
-      <h1>🦞 OpenClaw 可落地场景日报</h1>
-      <p class="subtitle">每天自动收集 OpenClaw 实际应用案例和工作流，帮你发现 AI 助手的无限可能</p>
-      
-      <div class="meta">
-        <span class="meta-item">📅 2026-03-09</span>
-        <span class="meta-item">🔍 10 个场景</span>
-        <span class="meta-item">⏰ 今日更新</span>
-      </div>
+    <div class="header">
+      <h1>🦞 OpenClaw 场景日报</h1>
+      <div class="meta">2026-03-09 · 10 个场景 · 自动更新</div>
     </div>
     
-    <!-- Navigation -->
-    <div class="nav-tabs">
-      <a href="#" class="nav-tab active">📊 全部场景</a>
-      <a href="#categories" class="nav-tab">📂 分类浏览</a>
-      <a href="https://github.com/tripleW1989/openclaw-usecases" class="nav-tab" target="_blank">🌐 GitHub</a>
+    <div class="tabs">
+      <button class="tab active" data-category="all">全部</button>
+      <button class="tab" data-category="crm">💼 CRM</button>
+      <button class="tab" data-category="workflow">⚙️ 工作流</button>
+      <button class="tab" data-category="knowledge">🧠 知识管理</button>
+      <button class="tab" data-category="content">📱 内容创作</button>
+      <button class="tab" data-category="info">📰 信息聚合</button>
+      <button class="tab" data-category="security">🔒 安全审查</button>
+      <button class="tab" data-category="schedule">📅 日程管理</button>
+      <button class="tab" data-category="health">🍽️ 健康管理</button>
     </div>
     
-    <!-- Stats -->
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-value">10</div>
-        <div class="stat-label">总场景数</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">8</div>
-        <div class="stat-label">场景分类</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">7</div>
-        <div class="stat-label">信息来源</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-value">5</div>
-        <div class="stat-label">今日新增</div>
-      </div>
-    </div>
-    
-    <!-- Categories -->
-    <h2 class="section-title" id="categories">📂 场景分类</h2>
-    <div class="category-tags">
-      <span class="category-tag">💼 CRM 客户管理</span>
-      <span class="category-tag">✅ 工作流自动化</span>
-      <span class="category-tag">🧠 知识管理</span>
-      <span class="category-tag">📰 信息聚合</span>
-      <span class="category-tag">📱 内容创作</span>
-      <span class="category-tag">🔒 安全审查</span>
-      <span class="category-tag">📅 日程管理</span>
-      <span class="category-tag">🍽️ 健康管理</span>
-    </div>
-    
-    <!-- Scenarios -->
-    <h2 class="section-title">📋 详细场景列表</h2>
     <div class="scenarios-grid">
       
-      <!-- Scenario 1 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">💼</span>
-          <span>自然语言 CRM - 30 分钟从零到可用</span>
-        </h3>
+      <!-- CRM -->
+      <div class="scenario-card show" data-category="crm">
+        <h3><span class="icon">💼</span> <span>自然语言 CRM - 30 分钟从零到可用</span></h3>
         <div class="meta">
           <span class="tag">CRM 客户管理</span>
-          <span class="tag source">📰 腾讯新闻</span>
+          <span class="tag source">腾讯新闻</span>
         </div>
         <div class="summary">
-          <strong>核心功能：</strong><br>
-          用自然语言告诉 OpenClaw「帮我建一个 CRM，从 Gmail、Google Calendar 和 Fathom 里提取数据」，30 分钟就能跑起来。<br><br>
-          <strong>数据摄取：</strong><br>
-          • 系统每 30 分钟扫描邮件<br>
-          • 每 5 分钟在工作时段检查 Fathom<br>
-          • 所有数据先经过 LLM 判断价值<br><br>
-          <strong>核心能力：</strong><br>
-          最惊艳的细节：当你在其他场景时，CRM 会主动插嘴：「你之前和某个赞助商聊过类似话题，也许他们愿意赞助这期。」
+          <strong>核心功能：</strong>用自然语言告诉 OpenClaw「帮我建一个 CRM」，30 分钟就能跑起来。<br><br>
+          <strong>数据摄取：</strong>系统每 30 分钟扫描邮件，每 5 分钟检查 Fathom，所有数据先经过 LLM 判断价值。<br><br>
+          <strong>亮点：</strong>CRM 会主动插嘴：「你之前和某个赞助商聊过类似话题，也许他们愿意赞助这期。」
         </div>
-        <div class="actions">
-          <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
-      <!-- Scenario 2 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">✅</span>
-          <span>会议行动项自动追踪</span>
-        </h3>
+      <!-- Workflow -->
+      <div class="scenario-card show" data-category="workflow">
+        <h3><span class="icon">✅</span> <span>会议行动项自动追踪</span></h3>
         <div class="meta">
           <span class="tag">工作流自动化</span>
-          <span class="tag source">📰 人人都是产品经理</span>
+          <span class="tag source">人人都是产品经理</span>
         </div>
         <div class="summary">
-          <strong>工作流：</strong><br>
-          会议结束 → Fathom 转录全文 → OpenClaw 匹配 CRM 联系人 → 提取行动项 → 发 Telegram 审批 → 进 Todoist<br><br>
-          <strong>价值：</strong><br>
-          • 不再遗漏任何会议承诺<br>
-          • 自动关联相关联系人<br>
-          • 审批流程自动化<br>
-          • 与任务管理系统无缝对接
+          <strong>工作流：</strong>会议结束 → Fathom 转录 → OpenClaw 匹配联系人 → 提取行动项 → 发 Telegram 审批 → 进 Todoist<br><br>
+          <strong>价值：</strong>不再遗漏任何会议承诺，自动关联相关联系人，审批流程自动化。
         </div>
-        <div class="actions">
-          <a href="https://www.woshipm.com/ai/6343295.html" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://www.woshipm.com/ai/6343295.html" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
-      <!-- Scenario 3 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">🧠</span>
-          <span>第二大脑系统</span>
-        </h3>
+      <!-- Knowledge -->
+      <div class="scenario-card show" data-category="knowledge">
+        <h3><span class="icon">🧠</span> <span>第二大脑系统</span></h3>
         <div class="meta">
           <span class="tag">知识管理</span>
-          <span class="tag source">📰 今日头条</span>
+          <span class="tag source">今日头条</span>
         </div>
         <div class="summary">
-          <strong>痛点解决：</strong><br>
-          你有没有过这种情况：在路上突然想到一个主意，或者发现一个想记住的链接，或者一本想读的书，但你没有系统来保存这些信息？<br><br>
-          <strong>实现方式：</strong><br>
-          用 OpenClaw 建立第二大脑系统，只需要一条简单的短信就能保存信息。OpenClaw 拥有迄今为止任何 AI 工具中最好的记忆系统。<br><br>
-          <strong>使用场景：</strong><br>
-          • 随时保存灵感 • 搜索历史对话 • 管理待读清单 • 关联相关信息
+          <strong>痛点：</strong>在路上突然想到一个主意，或者发现一个想记住的链接，但没有系统来保存。<br><br>
+          <strong>方案：</strong>用 OpenClaw 建立第二大脑，只需要一条短信就能保存信息。它会记住你告诉它的每一件事情，随时搜索历史对话。
         </div>
-        <div class="actions">
-          <a href="https://www.toutiao.com/article/7609975881223406123/" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://www.toutiao.com/article/7609975881223406123/" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
-      <!-- Scenario 4 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">📰</span>
-          <span>定制早间简报</span>
-        </h3>
+      <!-- Info -->
+      <div class="scenario-card show" data-category="info">
+        <h3><span class="icon">📰</span> <span>定制早间简报</span></h3>
         <div class="meta">
           <span class="tag">信息聚合</span>
-          <span class="tag source">📰 今日头条</span>
+          <span class="tag source">今日头条</span>
         </div>
         <div class="summary">
-          <strong>功能描述：</strong><br>
-          每天早上 8 点，机器人会自动发送一份完全定制化的早间简报，包含当天需要知道的一切。<br><br>
-          <strong>内容包括：</strong><br>
-          • 昨晚最大的 AI 新闻<br>
-          • 视频创意建议<br>
-          • Mac 上的待办事项清单<br>
-          • 日历提醒<br>
-          • 重要联系人动态<br><br>
-          <strong>价值：</strong>自动计划，不需要考虑它，但它包含了所有重要信息。
+          <strong>功能：</strong>每天早上 8 点自动发送定制化早间简报。<br><br>
+          <strong>内容：</strong>昨晚 AI 新闻、视频创意、待办事项、日历提醒、联系人动态。<br><br>
+          <strong>价值：</strong>自动计划，醒来就知道所有重要信息。
         </div>
-        <div class="actions">
-          <a href="https://www.toutiao.com/article/7609975881223406123/" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://www.toutiao.com/article/7609975881223406123/" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
-      <!-- Scenario 5 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">📱</span>
-          <span>新媒体内容创作流水线</span>
-        </h3>
+      <!-- Content -->
+      <div class="scenario-card show" data-category="content">
+        <h3><span class="icon">📱</span> <span>新媒体内容创作流水线</span></h3>
         <div class="meta">
           <span class="tag">内容创作</span>
-          <span class="tag source">📰 中华网</span>
+          <span class="tag source">中华网</span>
         </div>
         <div class="summary">
-          <strong>核心适配点：</strong><br>
-          内容创作的选题、找素材、排版、发布等环节，均为高重复度、低技术含量的工作，耗时耗力。OpenClaw 可将这类依赖灵感的工作转化为标准化流水线作业。<br><br>
-          <strong>实操落地场景：</strong><br>
-          1. 热点追踪 + 文案生成：每日定时抓取小红书、抖音、X 平台的行业热点<br>
-          2. 视频辅助制作：自动下载素材、提取字幕、生成封面关键帧<br>
-          3. 周报/快讯自动生成：订阅数十个信息源，自动过滤重复内容
+          <strong>核心：</strong>将依赖灵感的工作转化为标准化流水线作业，自动化完成 70% 的工作。<br><br>
+          <strong>场景：</strong>热点追踪 + 文案生成、视频辅助制作、周报自动生成。<br><br>
+          <strong>效果：</strong>节省的时间可支撑多产出 3 条内容。
         </div>
-        <div class="actions">
-          <a href="https://mtz.china.com/touzi/2026/0304/220096.html" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://mtz.china.com/touzi/2026/0304/220096.html" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
-      <!-- Scenario 6 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">🔒</span>
-          <span>安全审查自动化</span>
-        </h3>
+      <!-- Content -->
+      <div class="scenario-card show" data-category="content">
+        <h3><span class="icon">🎬</span> <span>视频选题流水线</span></h3>
+        <div class="meta">
+          <span class="tag">内容创作</span>
+          <span class="tag source">腾讯新闻</span>
+        </div>
+        <div class="summary">
+          <strong>流程：</strong>监控热门视频 → 分析话题趋势 → 结合 CRM 赞助商信息 → 生成选题建议 → 创建脚本大纲<br><br>
+          <strong>价值：</strong>不再为选题发愁，数据驱动的决策，与商业机会自动关联。
+        </div>
+        <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn">阅读原文 →</a>
+      </div>
+      
+      <!-- Security -->
+      <div class="scenario-card show" data-category="security">
+        <h3><span class="icon">🔒</span> <span>安全审查自动化</span></h3>
         <div class="meta">
           <span class="tag">安全审查</span>
-          <span class="tag source">📰 腾讯新闻</span>
+          <span class="tag source">腾讯新闻</span>
         </div>
         <div class="summary">
-          <strong>功能描述：</strong><br>
-          自动审查文档、代码、合同等内容的安全风险。<br><br>
-          <strong>工作流程：</strong><br>
-          • 上传文件到指定目录<br>
-          • OpenClaw 自动读取并分析<br>
-          • 识别敏感信息、合规风险<br>
-          • 生成审查报告<br>
-          • 发送审批请求<br><br>
-          <strong>价值：</strong>降低人为疏漏 • 标准化审查流程 • 24 小时待命
+          <strong>功能：</strong>自动审查文档、代码、合同的安全风险。<br><br>
+          <strong>流程：</strong>上传文件 → 自动读取分析 → 识别敏感信息 → 生成审查报告 → 发送审批<br><br>
+          <strong>价值：</strong>降低人为疏漏，标准化审查流程，24 小时待命。
         </div>
-        <div class="actions">
-          <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
-      <!-- Scenario 7 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">🧠</span>
-          <span>商业顾问团</span>
-        </h3>
-        <div class="meta">
-          <span class="tag">AI 专家团</span>
-          <span class="tag source">📰 腾讯新闻</span>
-        </div>
-        <div class="summary">
-          <strong>功能描述：</strong><br>
-          创建多个 AI 专家角色，组成你的私人董事会。<br><br>
-          <strong>角色示例：</strong><br>
-          • 营销策略专家<br>
-          • 财务顾问<br>
-          • 法律顾问<br>
-          • 技术顾问<br>
-          • 人力资源专家<br><br>
-          <strong>使用方式：</strong><br>
-          遇到决策问题时，让所有专家发表意见，综合各方面建议做出决策。
-        </div>
-        <div class="actions">
-          <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
-      </div>
-      
-      <!-- Scenario 8 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">📅</span>
-          <span>日程管理与提醒</span>
-        </h3>
+      <!-- Schedule -->
+      <div class="scenario-card show" data-category="schedule">
+        <h3><span class="icon">📅</span> <span>日程管理与提醒</span></h3>
         <div class="meta">
           <span class="tag">日程管理</span>
-          <span class="tag source">📰 博客园</span>
+          <span class="tag source">博客园</span>
         </div>
         <div class="summary">
-          <strong>功能描述：</strong><br>
-          自动管理日历、设置提醒、跟踪待办事项。<br><br>
-          <strong>工作流程：</strong><br>
-          • 从邮件、聊天记录中提取日期和任务<br>
-          • 自动添加到日历<br>
-          • 智能提醒（考虑交通时间、准备时间）<br>
-          • 冲突检测和调整建议<br><br>
-          <strong>价值：</strong>不再错过重要会议 • 智能时间管理 • 减少手动输入
+          <strong>功能：</strong>自动管理日历、设置提醒、跟踪待办事项。<br><br>
+          <strong>流程：</strong>从邮件/聊天提取日期任务 → 自动添加日历 → 智能提醒 → 冲突检测<br><br>
+          <strong>价值：</strong>不再错过重要会议，智能时间管理，减少手动输入。
         </div>
-        <div class="actions">
-          <a href="https://www.cnblogs.com/aibi1/p/19680320" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://www.cnblogs.com/aibi1/p/19680320" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
-      <!-- Scenario 9 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">🍽️</span>
-          <span>食物日记与健康管理</span>
-        </h3>
+      <!-- Health -->
+      <div class="scenario-card show" data-category="health">
+        <h3><span class="icon">🍽️</span> <span>食物日记与健康管理</span></h3>
         <div class="meta">
           <span class="tag">健康管理</span>
-          <span class="tag source">📰 腾讯新闻</span>
+          <span class="tag source">腾讯新闻</span>
         </div>
         <div class="summary">
-          <strong>功能描述：</strong><br>
-          通过简单的消息记录每日饮食，自动分析营养成分。<br><br>
-          <strong>使用方式：</strong><br>
-          发送消息：「早餐吃了 2 个鸡蛋、1 片全麦面包、1 杯牛奶」<br>
-          OpenClaw 自动记录并计算卡路里、蛋白质、碳水化合物等。<br><br>
-          <strong>价值：</strong>轻松追踪饮食习惯 • 营养分析 • 健康建议
+          <strong>功能：</strong>通过简单消息记录每日饮食，自动分析营养成分。<br><br>
+          <strong>使用：</strong>发送「早餐吃了 2 个鸡蛋、1 片面包、1 杯牛奶」，自动计算卡路里、蛋白质、碳水化合物。<br><br>
+          <strong>价值：</strong>轻松追踪饮食习惯，营养分析，健康建议。
         </div>
-        <div class="actions">
-          <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
-      <!-- Scenario 10 -->
-      <div class="scenario-card">
-        <h3>
-          <span class="icon">🎬</span>
-          <span>视频选题流水线</span>
-        </h3>
+      <!-- Workflow -->
+      <div class="scenario-card show" data-category="workflow">
+        <h3><span class="icon">🧠</span> <span>商业顾问团</span></h3>
         <div class="meta">
-          <span class="tag">内容创作</span>
-          <span class="tag source">📰 腾讯新闻</span>
+          <span class="tag">AI 专家团</span>
+          <span class="tag source">腾讯新闻</span>
         </div>
         <div class="summary">
-          <strong>工作流程：</strong><br>
-          1. 监控 YouTube、B 站、抖音的热门视频<br>
-          2. 分析话题趋势<br>
-          3. 结合 CRM 中的赞助商信息<br>
-          4. 生成选题建议<br>
-          5. 自动创建脚本大纲<br><br>
-          <strong>价值：</strong><br>
-          • 不再为选题发愁<br>
-          • 数据驱动的决策<br>
-          • 与商业机会自动关联
+          <strong>功能：</strong>创建多个 AI 专家角色，组成私人董事会。<br><br>
+          <strong>角色：</strong>营销策略专家、财务顾问、法律顾问、技术顾问、人力资源专家。<br><br>
+          <strong>使用：</strong>遇到决策问题时，让所有专家发表意见，综合各方面建议做出决策。
         </div>
-        <div class="actions">
-          <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn btn-primary">🔗 阅读原文</a>
-        </div>
+        <a href="https://news.qq.com/rain/a/20260223A044RX00" target="_blank" class="btn">阅读原文 →</a>
       </div>
       
     </div>
     
-    <!-- Footer -->
     <div class="footer">
-      <p>🤖 Generated by OpenClaw Auto Collector</p>
-      <p>📊 数据来源于博查搜索 • 每日自动更新</p>
-      <p>⏰ 最后更新：2026-03-09 11:45</p>
+      <p>🤖 Auto Generated by OpenClaw · 数据来源于博查搜索 · 每日自动更新</p>
     </div>
   </div>
+  
+  <script>
+    // Tab 切换逻辑
+    const tabs = document.querySelectorAll('.tab');
+    const cards = document.querySelectorAll('.scenario-card');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // 移除所有 active
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        // 筛选场景
+        const category = tab.dataset.category;
+        cards.forEach(card => {
+          if (category === 'all' || card.dataset.category === category) {
+            card.classList.add('show');
+          } else {
+            card.classList.remove('show');
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
