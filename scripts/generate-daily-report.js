@@ -22,128 +22,167 @@ function generateDailyReport(rawData, date) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenClaw 场景日报 - ${date}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #2563eb;
+      --primary-light: #3b82f6;
+      --cta: #f97316;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --shadow: rgba(0,0,0,0.06);
+    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       min-height: 100vh;
       padding: 40px 20px;
       line-height: 1.6;
     }
-    .container { max-width: 1000px; margin: 0 auto; }
+    .container { max-width: 1100px; margin: 0 auto; }
     .header {
-      background: rgba(255,255,255,0.98);
-      padding: 40px 30px;
-      border-radius: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      background: var(--card-bg);
+      padding: 48px 40px;
+      border-radius: 4px;
+      margin-bottom: 32px;
+      box-shadow: 0 1px 3px var(--shadow);
       text-align: center;
+      border: 1px solid var(--border);
     }
     .header h1 {
-      font-size: 32px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 10px;
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .header h1 span { color: var(--primary); }
+    .header .date {
+      font-size: 18px;
+      color: var(--text-light);
+      margin-bottom: 20px;
     }
     .header .meta {
       display: flex;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       flex-wrap: wrap;
-      margin-top: 15px;
+      margin-top: 20px;
     }
     .header .meta-item {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
       color: #fff;
-      padding: 8px 16px;
-      border-radius: 20px;
+      padding: 10px 20px;
+      border-radius: 24px;
       font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(37,99,235,0.3);
     }
     .nav-links {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
+      gap: 16px;
+      margin-bottom: 32px;
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 12px;
     }
     .nav-links a {
-      color: #667eea;
+      color: var(--text);
       text-decoration: none;
       padding: 8px 16px;
-      border: 2px solid #667eea;
-      border-radius: 20px;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       transition: all 0.2s;
+      border-radius: 2px;
     }
     .nav-links a:hover {
-      background: #667eea;
-      color: #fff;
+      color: var(--primary);
     }
     .scenario-card {
-      background: rgba(255,255,255,0.95);
-      border-radius: 16px;
-      padding: 25px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-      transition: all 0.3s;
+      background: var(--card-bg);
+      border-radius: 2px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px var(--shadow);
+      transition: all 0.25s ease;
+      border-left: 3px solid var(--primary);
     }
     .scenario-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 50px rgba(102,126,234,0.3);
+      box-shadow: 0 4px 12px var(--shadow);
+      border-left-color: var(--cta);
     }
     .scenario-card h2 {
-      font-size: 20px;
-      color: #667eea;
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
       margin-bottom: 12px;
       display: flex;
       align-items: center;
       gap: 10px;
+      font-weight: 600;
+    }
+    .scenario-card h2::before {
+      content: "✦";
+      color: var(--primary);
+      font-size: 14px;
     }
     .scenario-card .meta {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 15px;
+      margin-bottom: 16px;
     }
     .scenario-card .tag {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: #fff;
+      background: transparent;
+      color: var(--text-light);
       padding: 4px 12px;
-      border-radius: 12px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
       font-size: 12px;
-      font-weight: 500;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
     .scenario-card .tag.source {
-      background: #f0f0f0;
-      color: #666;
+      background: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
     }
     .scenario-card .summary {
       line-height: 1.8;
-      color: #333;
-      font-size: 14px;
-      background: #fafafa;
-      padding: 15px;
-      border-radius: 10px;
-      border-left: 3px solid #667eea;
+      color: var(--text);
+      font-size: 15px;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
       white-space: pre-line;
     }
     .scenario-card .url {
       display: inline-block;
-      margin-top: 15px;
-      color: #667eea;
+      margin-top: 12px;
+      color: var(--cta);
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
       font-size: 14px;
       padding: 8px 16px;
-      border: 2px solid #667eea;
+      border: 1px solid var(--primary);
       border-radius: 20px;
       transition: all 0.2s;
     }
     .scenario-card .url:hover {
-      background: #667eea;
+      background: var(--primary);
       color: #fff;
     }
     .empty-state {
