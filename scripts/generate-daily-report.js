@@ -587,7 +587,8 @@ function generateOverviewPage(allScenarios) {
           document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
           document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
           tab.classList.add('active');
-          document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+          const tabId = 'tab-' + encodeURIComponent(tab.dataset.tab);
+          document.getElementById(tabId).classList.add('active');
         });
       });
     </script>
