@@ -263,231 +263,248 @@ function generateOverviewPage(allScenarios) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenClaw 可落地场景汇总</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #2563eb;
+      --primary-light: #3b82f6;
+      --cta: #f97316;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --shadow: rgba(0,0,0,0.06);
+    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       min-height: 100vh;
       padding: 40px 20px;
       line-height: 1.6;
     }
-    .container { max-width: 1200px; margin: 0 auto; }
+    .container { max-width: 1100px; margin: 0 auto; }
     .header {
-      background: rgba(255,255,255,0.98);
-      padding: 50px 40px;
-      border-radius: 24px;
-      margin-bottom: 30px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      background: var(--card-bg);
+      padding: 48px 40px;
+      border-radius: 4px;
+      margin-bottom: 32px;
+      box-shadow: 0 1px 3px var(--shadow);
       text-align: center;
+      border: 1px solid var(--border);
     }
     .header h1 {
+      font-family: 'Newsreader', Georgia, serif;
       font-size: 42px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
     }
+    .header h1 span { color: var(--primary); }
     .header .subtitle {
-      font-size: 18px;
-      color: #666;
+      font-size: 16px;
+      color: var(--text-light);
       margin-bottom: 25px;
     }
     .header .meta {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 12px;
       flex-wrap: wrap;
     }
     .header .meta-item {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: var(--primary);
       color: #fff;
-      padding: 10px 20px;
-      border-radius: 25px;
-      font-size: 15px;
+      padding: 8px 16px;
+      border-radius: 2px;
+      font-size: 13px;
       font-weight: 500;
     }
     .nav-links {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
+      gap: 16px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 12px;
     }
     .nav-links a {
-      color: #667eea;
+      color: var(--text);
       text-decoration: none;
       padding: 8px 16px;
-      border: 2px solid #667eea;
-      border-radius: 20px;
       font-size: 14px;
-      font-weight: 600;
-      transition: all 0.2s;
+      font-weight: 500;
     }
-    .nav-links a:hover {
-      background: #667eea;
-      color: #fff;
+    .nav-links a:hover { color: var(--primary); }
+    
+    /* Tab 样式 */
+    .tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 32px;
+      border-bottom: 2px solid var(--border);
+      overflow-x: auto;
     }
+    .tab {
+      padding: 12px 24px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-light);
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      white-space: nowrap;
+    }
+    .tab:hover { color: var(--primary); }
+    .tab.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
     }
     .stat-card {
-      background: rgba(255,255,255,0.95);
-      padding: 30px;
-      border-radius: 20px;
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 2px;
       text-align: center;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      border: 1px solid var(--border);
     }
     .stat-value {
-      font-size: 48px;
-      font-weight: 700;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--text);
     }
     .stat-label {
-      font-size: 15px;
-      color: #666;
-      margin-top: 10px;
+      font-size: 13px;
+      color: var(--text-light);
+      margin-top: 8px;
     }
     .category-section {
-      background: rgba(255,255,255,0.95);
-      padding: 30px 40px;
-      border-radius: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 2px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px var(--shadow);
+      border: 1px solid var(--border);
     }
     .category-header {
       display: flex;
       align-items: center;
       gap: 12px;
-      margin-bottom: 25px;
-      padding-bottom: 15px;
-      border-bottom: 2px solid #eee;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
     }
     .category-header h2 {
-      font-size: 26px;
-      color: #667eea;
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 22px;
+      color: var(--text);
     }
     .category-header .count {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: var(--primary);
       color: #fff;
-      padding: 5px 14px;
-      border-radius: 20px;
-      font-size: 14px;
-      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 2px;
+      font-size: 12px;
+    }
+    
+    /* 网格布局 - 2列 */
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 768px) {
+      .scenario-grid { grid-template-columns: 1fr; }
     }
     .scenario-card {
-      border: 1px solid #e0e0e0;
-      border-radius: 16px;
-      padding: 25px;
-      margin-bottom: 20px;
-      transition: all 0.3s;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 16px;
+      transition: all 0.2s;
       background: #fff;
     }
     .scenario-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(102,126,234,0.2);
-      border-color: #667eea;
+      box-shadow: 0 4px 12px var(--shadow);
+      border-color: var(--primary-light);
     }
     .scenario-card h3 {
-      font-size: 20px;
-      color: #667eea;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
+      font-size: 16px;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-weight: 600;
     }
     .scenario-card .meta {
       display: flex;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
     .scenario-card .tag {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: #fff;
-      padding: 4px 12px;
-      border-radius: 12px;
-      font-size: 12px;
-      font-weight: 500;
+      background: transparent;
+      color: var(--text-light);
+      padding: 2px 8px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      font-size: 11px;
+      text-transform: uppercase;
     }
-    .scenario-card .tag.source {
-      background: #f0f0f0;
-      color: #666;
-    }
-    .scenario-card .tag.date {
-      background: #e8f4fd;
-      color: #0366d6;
-    }
+    .scenario-card .tag.source { border-color: var(--primary); color: var(--primary); }
     .scenario-card .summary {
-      line-height: 1.8;
-      color: #333;
-      font-size: 14px;
-      background: #fafafa;
-      padding: 15px;
-      border-radius: 10px;
-      border-left: 3px solid #667eea;
-      white-space: pre-line;
-    }
-    .scenario-card .url {
-      display: inline-block;
-      margin-top: 15px;
-      color: #667eea;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
-      padding: 8px 16px;
-      border: 2px solid #667eea;
-      border-radius: 20px;
-      transition: all 0.2s;
-    }
-    .scenario-card .url:hover {
-      background: #667eea;
-      color: #fff;
+      line-height: 1.6;
+      color: var(--text);
+      font-size: 13px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
     }
     .footer {
       text-align: center;
-      color: rgba(255,255,255,0.9);
-      margin-top: 50px;
-      padding: 30px;
-      font-size: 15px;
+      color: var(--text-light);
+      margin-top: 40px;
+      padding: 24px;
+      font-size: 13px;
     }
-    .footer p { margin: 8px 0; }
     .toc {
-      background: rgba(255,255,255,0.95);
-      padding: 30px 40px;
-      border-radius: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 2px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
     }
     .toc h2 {
-      font-size: 24px;
-      color: #667eea;
-      margin-bottom: 20px;
+      font-size: 18px;
+      color: var(--text);
+      margin-bottom: 16px;
     }
     .toc-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
     }
     .toc-links a {
-      background: #f5f5f5;
-      color: #667eea;
-      padding: 8px 16px;
-      border-radius: 20px;
+      background: transparent;
+      color: var(--primary);
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
       text-decoration: none;
-      font-size: 14px;
-      transition: all 0.2s;
+      font-size: 12px;
     }
-    .toc-links a:hover {
-      background: #667eea;
-      color: #fff;
-    }
+    .toc-links a:hover { border-color: var(--primary); }
   </style>
 </head>
 <body>
@@ -525,33 +542,55 @@ function generateOverviewPage(allScenarios) {
       </div>
     </div>
 
-    <div class="toc">
-      <h2>📑 快速导航</h2>
-      <div class="toc-links">
-        ${categories.map(cat => `<a href="#${encodeURIComponent(cat)}">${cat} (${byCategory[cat].length})</a>`).join('')}
+    <!-- Tab 导航 -->
+    <div class="tabs">
+      <button class="tab active" data-tab="all">全部 ${totalScenarios}</button>
+      ${categories.map(cat => `<button class="tab" data-tab="${encodeURIComponent(cat)}">${cat} (${byCategory[cat].length})</button>`).join('')}
+    </div>
+
+    <!-- Tab 内容 -->
+    <div class="tab-content active" id="tab-all">
+      <div class="scenario-grid">
+        ${allScenarios.map(s => `
+        <div class="scenario-card">
+          <h3>${s.title}</h3>
+          <div class="meta">
+            <span class="tag">${s.category}</span>
+            <span class="tag source">${s.source}</span>
+          </div>
+          <div class="summary">${(s.summary || s.description || '').substring(0, 100)}...</div>
+        </div>
+        `).join('')}
       </div>
     </div>
 
     ${categories.map(cat => `
-    <div class="category-section" id="${encodeURIComponent(cat)}">
-      <div class="category-header">
-        <h2>${getCategoryIcon(cat)} ${cat}</h2>
-        <span class="count">${byCategory[cat].length} 个场景</span>
-      </div>
-      ${byCategory[cat].map(s => `
-      <div class="scenario-card">
-        <h3><span>${s.icon || '📋'}</span> ${s.title}</h3>
-        <div class="meta">
-          <span class="tag">${s.category}</span>
-          <span class="tag source">${s.source}</span>
-          ${s.date ? `<span class="tag date">📅 ${s.date}</span>` : ''}
+    <div class="tab-content" id="tab-${encodeURIComponent(cat)}">
+      <div class="scenario-grid">
+        ${byCategory[cat].map(s => `
+        <div class="scenario-card">
+          <h3>${s.title}</h3>
+          <div class="meta">
+            <span class="tag">${s.category}</span>
+            <span class="tag source">${s.source}</span>
+          </div>
+          <div class="summary">${(s.summary || s.description || '').substring(0, 100)}...</div>
         </div>
-        <div class="summary">${s.summary || s.description}</div>
-        <a href="${s.url}" target="_blank" class="url">🔗 阅读原文 →</a>
+        `).join('')}
       </div>
-      `).join('')}
     </div>
     `).join('')}
+
+    <script>
+      document.querySelectorAll('.tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+          tab.classList.add('active');
+          document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+        });
+      });
+    </script>
 
     <div class="footer">
       <p>🤖 Generated by OpenClaw Auto Collector</p>
