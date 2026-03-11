@@ -448,6 +448,13 @@ function generateOverviewPage(allScenarios) {
       margin-bottom: 8px;
       font-weight: 600;
     }
+    .scenario-card h3 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .scenario-card h3 a:hover {
+      color: var(--primary);
+    }
     .scenario-card .meta {
       display: flex;
       gap: 8px;
@@ -471,6 +478,16 @@ function generateOverviewPage(allScenarios) {
       padding-top: 10px;
       border-top: 1px solid var(--border);
     }
+    .scenario-card .url {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--cta);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .scenario-card .url:hover { text-decoration: underline; }
     .footer {
       text-align: center;
       color: var(--text-light);
@@ -553,12 +570,13 @@ function generateOverviewPage(allScenarios) {
       <div class="scenario-grid">
         ${allScenarios.map(s => `
         <div class="scenario-card">
-          <h3>${s.title}</h3>
+          <h3><a href="${s.url}" target="_blank">${s.title}</a></h3>
           <div class="meta">
             <span class="tag">${s.category}</span>
             <span class="tag source">${s.source}</span>
           </div>
           <div class="summary">${(s.summary || s.description || '').substring(0, 100)}...</div>
+          <a href="${s.url}" target="_blank" class="url">阅读原文 →</a>
         </div>
         `).join('')}
       </div>
@@ -569,12 +587,13 @@ function generateOverviewPage(allScenarios) {
       <div class="scenario-grid">
         ${byCategory[cat].map(s => `
         <div class="scenario-card">
-          <h3>${s.title}</h3>
+          <h3><a href="${s.url}" target="_blank">${s.title}</a></h3>
           <div class="meta">
             <span class="tag">${s.category}</span>
             <span class="tag source">${s.source}</span>
           </div>
           <div class="summary">${(s.summary || s.description || '').substring(0, 100)}...</div>
+          <a href="${s.url}" target="_blank" class="url">阅读原文 →</a>
         </div>
         `).join('')}
       </div>
