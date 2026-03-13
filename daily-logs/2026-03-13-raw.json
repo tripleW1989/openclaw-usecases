@@ -107,6 +107,33 @@
       "summary": "介绍如何在Mac Mini上部署OpenClaw并调用本地大模型。",
       "url": "https://www.cnblogs.com/HarryMiau/p/19708773",
       "icon": "🍎"
+    },
+    {
+      "title": "5分钟搞定OpenClaw部署?还有4年AI避坑指南",
+      "category": "教程",
+      "source": "腾讯新闻",
+      "date": "2026-03-10",
+      "summary": "分享如何低成本甚至零成本用上AI，以及如何搭建工作流和Skill才能不让Agent榨干你的钱包。",
+      "url": "https://news.qq.com/rain/a/20260310A027W400",
+      "icon": "💡"
+    },
+    {
+      "title": "青否AI Agent营销系统:打造你的7x24小时AI员工",
+      "category": "行业应用",
+      "source": "网易",
+      "date": "2026-02-27",
+      "summary": "OpenClaw同款青否AI Agent营销系统，以【AI获客+AI引流+AI销售】三位一体架构，重构企业营销体系。",
+      "url": "https://m.163.com/dy/article/KMP5U82R0556IU7D.html",
+      "icon": "📈"
+    },
+    {
+      "title": "别再乱养小龙年了:7款热门 AI Agent 一次看完",
+      "category": "行业趋势",
+      "source": "腾讯新闻",
+      "date": "2026-03-13",
+      "summary": "对比7款热门AI Agent:OpenClaw、WorkBuddy、ArkClaw、DuClaw、AutoClaw等，分析各自适用场景。",
+      "url": "https://news.qq.com/rain/a/20260313A07UZN00",
+      "icon": "🦞"
     }
   ]
 }
