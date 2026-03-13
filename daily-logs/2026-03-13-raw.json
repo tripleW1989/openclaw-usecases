@@ -1,0 +1,112 @@
+{
+  "scenarios": [
+    {
+      "title": "OpenClaw AI Agent 框架获市场关注",
+      "category": "行业趋势",
+      "source": "华西计算机",
+      "date": "2026-03-13",
+      "summary": "OpenClaw是一个开源的自主人工智能虚拟助理软件项目，被视为新时代的AI员工。该项目由软件工程师Peter Steinberger开发，2025年末发布后快速获得市场关注。",
+      "url": "https://k.sina.com.cn/article_5953741034_162dee0ea06703bk4u.html",
+      "icon": "📊"
+    },
+    {
+      "title": "OpenClaw 应用场景全解析",
+      "category": "应用场景",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "OpenClaw的应用场景广泛覆盖企业办公、工业制造、个人生活、政务服务和外贸运营等多个领域。作为开源AI智能体框架，它能像'数字员工'一样执行重复性任务。",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🏢"
+    },
+    {
+      "title": "大家都用 OpenClaw 解决了啥需求? 20个真实场景",
+      "category": "个人效率",
+      "source": "七牛云博客园",
+      "date": "2026-03-10",
+      "summary": "来自真实用户的20个场景，覆盖个人效率、开发自动化、健康管理、内容创作四大领域。有用户评价：'它在帮我运营公司。'",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19696096",
+      "icon": "👤"
+    },
+    {
+      "title": "OpenClaw 完整教程: 从安装到第一个自动化工作流",
+      "category": "教程",
+      "source": "七牛云博客园",
+      "date": "2026-03-10",
+      "summary": "完整教程覆盖从环境安装到配置第一个自动化工作流的完整流程，预计耗时15-30分钟。",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19696475",
+      "icon": "📚"
+    },
+    {
+      "title": "OpenClaw 发布新版本 GPT-5.4 原生支持",
+      "category": "产品更新",
+      "source": "网易",
+      "date": "2026-03-09",
+      "summary": "OpenClaw发布v2026.3.7-beta.1版本，89项代码提交，200多个Bug修复，GPT-5.4原生支持。",
+      "url": "https://www.163.com/dy/article/KNJ7DUH405119734.html",
+      "icon": "🚀"
+    },
+    {
+      "title": "OpenClaw 中文版发布",
+      "category": "产品发布",
+      "source": "游侠网",
+      "date": "2026-03-09",
+      "summary": "OpenClaw中文版是一款开源的AI智能体与自动化执行引擎，通过自然语言指令驱动，可在本地电脑或私有云环境中自主操作浏览器、文件系统与各类应用。",
+      "url": "https://soft.ali213.net/down/44616.html",
+      "icon": "🀄"
+    },
+    {
+      "title": "OpenClaw 完全指南: 开源本地AI助手的核心概念",
+      "category": "教程",
+      "source": "七牛云博客园",
+      "date": "2026-03-03",
+      "summary": "提供完整的安装、配置与使用指南，介绍OpenClaw作为运行在本地设备上的开源AI个人助手，支持通过聊天工具与AI交互完成日常自动化任务。",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19665050",
+      "icon": "📖"
+    },
+    {
+      "title": "生物制药研究人员用OpenClaw可以做些什么?",
+      "category": "行业应用",
+      "source": "医药魔方",
+      "date": "2026-03-08",
+      "summary": "OpenClaw可直接落地于生物制药从早期研发、科研产出、CMC开发到合规申报的全链条辅助工作，大幅压缩研发与生产环节的重复劳动成本。",
+      "url": "https://bydrug.pharmcube.com/news/detail/ce3db25dfc5d7bbffa76535539fd1e60",
+      "icon": "🔬"
+    },
+    {
+      "title": "打造你的专属金融投资分析数字员工",
+      "category": "行业应用",
+      "source": "新浪网",
+      "date": "2026-03-11",
+      "summary": "通过组合不同Skills，OpenClaw可构建完整的自动化工作流，如早报自动生成与分发流水线、网络爬虫+文本摘要+图文生成+邮件发送。",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c00190323gu.html",
+      "icon": "💰"
+    },
+    {
+      "title": "OpenClaw 高频功能详解",
+      "category": "功能介绍",
+      "source": "PHP中文网",
+      "date": "2026-03-11",
+      "summary": "五大核心功能：任务模板快速加载、多协议代理链动态切换、自定义Payload片段注入、实时日志过滤与高亮标记、模块间结果自动传递。",
+      "url": "https://www.php.cn/faq/2190796.html",
+      "icon": "⚙️"
+    },
+    {
+      "title": "OpenClaw 智能体网关支持工具一览",
+      "category": "技术文档",
+      "source": "博客园",
+      "date": "2026-03-11",
+      "summary": "OpenClaw是一个AI Agent网关/自动化工作流平台，可以把大模型连接到各种工具、应用平台、通信渠道和自动化能力。",
+      "url": "https://www.cnblogs.com/kkman2000/p/19700485",
+      "icon": "🔗"
+    },
+    {
+      "title": "OpenClaw 调用 Mac Mini 本地大模型",
+      "category": "技术教程",
+      "source": "博客园",
+      "date": "2026-03-12",
+      "summary": "介绍如何在Mac Mini上部署OpenClaw并调用本地大模型。",
+      "url": "https://www.cnblogs.com/HarryMiau/p/19708773",
+      "icon": "🍎"
+    }
+  ]
+}
