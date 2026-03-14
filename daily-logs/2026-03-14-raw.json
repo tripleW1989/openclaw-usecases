@@ -1,0 +1,76 @@
+{
+  "scenarios": [
+    {
+      "title": "GitHub 爆火的 30+ 个 OpenClaw 真实场景全拆解",
+      "category": "研发提效",
+      "source": "CSDN",
+      "date": "2026-03-14",
+      "summary": "30个硬核案例分为五大核心场景：研发提效与代码自动化、自动化PR深度审查、遗留系统跨语言重构、极客级单元测试生成器、生产环境监控修复。",
+      "url": "https://blog.csdn.net/musicml/article/details/158377626",
+      "icon": "💻"
+    },
+    {
+      "title": "OpenClaw 低 Token 成本方案:从模型选择到记忆压缩",
+      "category": "技术优化",
+      "source": "七牛云博客园",
+      "date": "2026-03-14",
+      "summary": "基于ReAct架构的开源AI个人助理框架，支持多平台接入和多模型切换，通过智能记忆压缩、轻量模型路由和MCP工具按需调用三层机制，可将日常使用成本降低60–80%。",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19709734",
+      "icon": "💰"
+    },
+    {
+      "title": "最新上线!OpenClaw超详细使用指南",
+      "category": "教程",
+      "source": "腾讯新闻",
+      "date": "2026-03-14",
+      "summary": "三节课整理全套学习方案：6门实战课从技术原理到企业级应用、16份深度研究报告、小白部署全教程。",
+      "url": "https://news.qq.com/rain/a/20260314A04WU700",
+      "icon": "📚"
+    },
+    {
+      "title": "2026 必玩开源神器:OpenClaw 一键部署",
+      "category": "教程",
+      "source": "CSDN",
+      "date": "2026-03-14",
+      "summary": "Windows系统一键部署教程，30分钟从零基础到完整可用。OpenClaw可深度控制电脑、自动完成任务、跨平台统一响应。",
+      "url": "https://blog.csdn.net/weixin_43151418/article/details/159007118",
+      "icon": "🖥️"
+    },
+    {
+      "title": "我用Openclaw + Claude搭了一套自动写作系统",
+      "category": "内容创作",
+      "source": "CSDN",
+      "date": "2026-03-14",
+      "summary": "从信息获取到发布的完整AI写作工作流，解决信息过载困境，每天省3小时。核心工具：OpenClaw+Obsidian+Telegram。",
+      "url": "https://blog.csdn.net/u013801484/article/details/158154546",
+      "icon": "✍️"
+    },
+    {
+      "title": "OpenClaw 大模型应用分析报告",
+      "category": "行业分析",
+      "source": "博客园",
+      "date": "2026-03-14",
+      "summary": "OpenClaw大模型应用分析报告，项目概述：个人AI助手网关，支持多通道消息集成(WhatsApp,Telegram,Slack,Discord,Signal,iMessage,Microsoft Teams等)。",
+      "url": "https://www.cnblogs.com/fylh/p/19714253",
+      "icon": "📊"
+    },
+    {
+      "title": "飞书OpenClaw插件:自动写文+整理表格",
+      "category": "办公自动化",
+      "source": "腾讯新闻",
+      "date": "2026-03-14",
+      "summary": "飞书OpenClaw插件可构建写作Agent，自动写推文发布到草稿箱，整理到多维表格，按评论修改文档。",
+      "url": "https://news.qq.com/rain/a/20260308A05VQ000",
+      "icon": "📝"
+    },
+    {
+      "title": "OpenClaw日常操作流程指南",
+      "category": "技术文档",
+      "source": "PHP中文网",
+      "date": "2026-03-14",
+      "summary": "OpenClaw日常操作需严格按五步执行：启动并加载项目、导入原始数据集并校验、配置处理管道、执行批处理并导出结果、保存项目并创建归档快照。",
+      "url": "https://www.php.cn/faq/2197962.html",
+      "icon": "⚙️"
+    }
+  ]
+}
