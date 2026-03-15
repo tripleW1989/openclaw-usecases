@@ -1,0 +1,149 @@
+{
+  "date": "2026-03-15",
+  "scenarios": [
+    {
+      "title": "GitHub 爆火的 30+ 个 OpenClaw 真实场景全拆解",
+      "category": "研发提效",
+      "source": "CSDN",
+      "date": "2026-02-24",
+      "summary": "详细拆解30+真实使用案例，分为五大核心场景：研发提效与代码自动化（PR深度审查、遗留系统跨语言重构、单元测试生成器）、生产环境监控等",
+      "url": "https://blog.csdn.net/musicml/article/details/158377626",
+      "icon": "💻"
+    },
+    {
+      "title": "GitHub 上开源了 30+ 个 OpenClaw 真实使用案例",
+      "category": "社交媒体",
+      "source": "CSDN",
+      "date": "2026-02-22",
+      "summary": "awesome-openclaw-usecases 仓库收录30+经过验证的真实场景，按六大类分类：社交媒体类（自动汇总subreddit、频道视频摘要）、创意与构建等",
+      "url": "https://blog.csdn.net/weixin_47080540/article/details/158312840",
+      "icon": "📱"
+    },
+    {
+      "title": "OpenClaw的应用场景有哪些",
+      "category": "企业应用",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "覆盖企业办公、工业制造、个人生活、政务服务和外贸运营等领域。汉得信息集成至智营AI平台，软通动力驱动巡检机器人7×24小时不间断作业",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🏢"
+    },
+    {
+      "title": "大家都用 OpenClaw 解决了啥需求?来自真实用户的 20 个场景",
+      "category": "个人效率",
+      "source": "博客园",
+      "date": "2026-03-10",
+      "summary": "覆盖个人效率、开发自动化、健康管理、内容创作四大领域。用户评价：'它在帮我运营公司'",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19696096",
+      "icon": "⚡"
+    },
+    {
+      "title": "OpenClaw 落地场景全解析:从个人提效到企业自动化",
+      "category": "企业应用",
+      "source": "博客园",
+      "date": "2026-03-09",
+      "summary": "运行在本地机器上的开源AI助手，支持50+日常工具调用，具备浏览器自动化、文件操作和持久记忆功能",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19691354",
+      "icon": "🏠"
+    },
+    {
+      "title": "我研究了 OpenClaw 的 10 个真实用例,有些地方让我不安",
+      "category": "个人效率",
+      "source": "人人都是产品经理",
+      "date": "2026-02-23",
+      "summary": "Matthew Berman 的工作流展示：30分钟搭建定制CRM、AI专家团每日董事会。从CRM到知识库到商业顾问，展现碎片化工作流如何转化为自动化飞轮",
+      "url": "https://www.woshipm.com/ai/6343295.html",
+      "icon": "🤖"
+    },
+    {
+      "title": "OpenClaw能干什么?一个重度用户的10个真实用例拆解",
+      "category": "个人效率",
+      "source": "腾讯新闻",
+      "date": "2026-02-23",
+      "summary": "自然语言CRM 30分钟从零到可用，会议行动项自动追踪到完成，一个人一台MacBook干了一个小公司中台团队的活",
+      "url": "https://news.qq.com/rain/a/20260223A044RX00",
+      "icon": "📊"
+    },
+    {
+      "title": "高强度使用两周,这个AI工具颠覆了我的工作流",
+      "category": "个人效率",
+      "source": "凤凰网",
+      "date": "2026-02-25",
+      "summary": "作者使用两周后，将工作流重新构建到OpenClaw上，成为解决数字生活需求的第一选择",
+      "url": "https://tech.ifeng.com/c/8r0dI0Sn2d3",
+      "icon": "🔄"
+    },
+    {
+      "title": "第一批玩OpenClaw的人已经开始清醒 从狂欢到祛魅",
+      "category": "行业观察",
+      "source": "中华网",
+      "date": "2026-03-09",
+      "summary": "GitHub突破250K+ Star，成为获星最多的软件项目。探讨门槛、翻车事件和成本问题",
+      "url": "https://news.china.com/socialgd/10000169/20260309/49305763.html",
+      "icon": "🔍"
+    },
+    {
+      "title": "OpenClaw 完整教程:从安装到第一个自动化工作流",
+      "category": "开发教程",
+      "source": "博客园",
+      "date": "2026-03-10",
+      "summary": "覆盖从环境安装到配置第一个自动化工作流的完整流程，15-30分钟可完成",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19696475",
+      "icon": "📖"
+    },
+    {
+      "title": "OpenClaw定时任务与自动化工作流",
+      "category": "开发教程",
+      "source": "CSDN",
+      "date": "2026-03-01",
+      "summary": "详细介绍Cron配置、Heartbeat心跳机制以及自动化工作流的设计与实践",
+      "url": "https://blog.csdn.net/sgr011215/article/details/158543839",
+      "icon": "⏰"
+    },
+    {
+      "title": "搭建OpenClaw实现钉钉 AI 员工自动化",
+      "category": "企业应用",
+      "source": "博客园",
+      "date": "2026-02-26",
+      "summary": "阿里云生态下的轻量级AI自动化框架，快速将LLM能力接入钉钉，打造7×24小时在线的AI员工",
+      "url": "https://www.cnblogs.com/cj8988/p/19643978",
+      "icon": "🔔"
+    },
+    {
+      "title": "OpenClaw中文版功能介绍",
+      "category": "个人效率",
+      "source": "优游网",
+      "date": "2026-03-11",
+      "summary": "全中文界面开源AI自动化工具，适配个人办公、企业运维、政务处理等多元场景",
+      "url": "https://m.yoyou.com/shouji/openc_278998.html",
+      "icon": "🅰️"
+    },
+    {
+      "title": "2026年计算机行业OpenClaw:吹响AI Agent时代号角",
+      "category": "行业观察",
+      "source": "未来智库",
+      "date": "2026-03-13",
+      "summary": "开源AI Agent项目，成为新时代的AI员工。IDC预测中国企业Agent数量将在2031年突破3.5亿规模",
+      "url": "https://www.vzkoo.com/read/4646378631868715008.html",
+      "icon": "📈"
+    },
+    {
+      "title": "别再乱养小龙虾了:7款热门 AI Agent 一次看完",
+      "category": "行业观察",
+      "source": "腾讯网",
+      "date": "2026-03-13",
+      "summary": "对比OpenClaw、WorkBuddy、ArkClaw、DuClaw、AutoClaw等7款热门AI Agent产品",
+      "url": "https://news.qq.com/rain/a/20260313A07UZN00",
+      "icon": "🦞"
+    },
+    {
+      "title": "OpenClaw 完全指南:多渠道 AI Agent 网关",
+      "category": "开发教程",
+      "source": "CSDN",
+      "date": "2026-03-06",
+      "summary": "强大的多渠道AI Agent网关，支持WhatsApp、Telegram、Discord、iMessage、飞书等多平台",
+      "url": "https://blog.csdn.net/CHNIM/article/details/158739942",
+      "icon": "🌐"
+    }
+  ]
+}
