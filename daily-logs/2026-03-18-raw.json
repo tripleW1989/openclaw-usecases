@@ -1,0 +1,175 @@
+{
+  "scenarios": [
+    {
+      "title": "自动化 PR 深度审查",
+      "category": "研发提效",
+      "source": "CSDN",
+      "date": "2026-02-24",
+      "summary": "Agent 拉取整个代码仓库上下文，分析 PR 是否符合团队设计模式，能指出潜在内存泄漏，并在代码行留下评论",
+      "url": "https://blog.csdn.net/musicml/article/details/158377626",
+      "icon": "🔍"
+    },
+    {
+      "title": "遗留系统跨语言重构",
+      "category": "研发提效",
+      "source": "CSDN",
+      "date": "2026-02-24",
+      "summary": "将古老 Python 2 脚本或陈旧 Java 接口逐模块迁移至 Go/Rust 架构，自动确保新代码逻辑一致性",
+      "url": "https://blog.csdn.net/musicml/article/details/158377626",
+      "icon": "🔄"
+    },
+    {
+      "title": "极客级单元测试生成器",
+      "category": "研发提效",
+      "source": "CSDN",
+      "date": "2026-02-24",
+      "summary": "监听代码提交，针对修改函数自动生成基于 Pytest/Jest 的边界条件测试用例，覆盖率不达标会自我修正",
+      "url": "https://blog.csdn.net/musicml/article/details/158377626",
+      "icon": "🧪"
+    },
+    {
+      "title": "自然语言 CRM 30分钟搭建",
+      "category": "个人效率",
+      "source": "腾讯新闻",
+      "date": "2026-02-23",
+      "summary": "用自然语言描述需求，30分钟从零搭建定制 CRM，自动从 Gmail/Google Calendar 拉取数据，过滤营销邮件，跨模块主动推荐",
+      "url": "https://news.qq.com/rain/a/20260223A044RX00",
+      "icon": "📊"
+    },
+    {
+      "title": "会议行动项自动追踪",
+      "category": "个人效率",
+      "source": "腾讯新闻",
+      "date": "2026-02-23",
+      "summary": "会议结束自动转录全文 → 匹配 CRM 联系人 → 提取行动项 → 发 Telegram 审批 → 进入 Todo 列表追踪到完成",
+      "url": "https://news.qq.com/rain/a/20260223A044RX00",
+      "icon": "📋"
+    },
+    {
+      "title": "人力资源自动简历筛选",
+      "category": "企业办公",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "自动筛选简历，替代简单高频但低精准度要求的重复性工作",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "👥"
+    },
+    {
+      "title": "市场营销舆情分析",
+      "category": "企业办公",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "抓取互联网动态舆情进行分析，汉得信息已集成至智营 AI 平台",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "📈"
+    },
+    {
+      "title": "工业巡检机器人",
+      "category": "工业制造",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "软通动力将 OpenClaw 融入工业互联与智慧园区产品线，驱动巡检机器人实现 7×24 小时不间断作业，Token 消耗降低 40%",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🏭"
+    },
+    {
+      "title": "儿童屏幕使用时间监控",
+      "category": "个人生活",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "自主监控孩子屏幕使用时间，数据超时后自动触发提醒并推送到智能音箱播报",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "👶"
+    },
+    {
+      "title": "政务服务智能化",
+      "category": "政务服务",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "深圳市龙岗区构建政务安全体系，强制本地化部署与网络隔离，关键操作需人工审核，推动政策解读、业务咨询智能驱动",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🏛️"
+    },
+    {
+      "title": "Multi-Source Tech News Digest",
+      "category": "信息获取",
+      "source": "CSDN",
+      "date": "2026-02-22",
+      "summary": "从 100+ 技术来源（RSS、X、GitHub、搜索等）自动抓取新闻，做质量打分和聚合，构建信息饮食体系",
+      "url": "https://blog.csdn.net/weixin_47080540/article/details/158312840",
+      "icon": "📰"
+    },
+    {
+      "title": "Reddit 摘要自动化",
+      "category": "社交媒体",
+      "source": "CSDN",
+      "date": "2026-02-22",
+      "summary": "每天自动汇总关注的 subreddit，按偏好生成摘要",
+      "url": "https://blog.csdn.net/weixin_47080540/article/details/158312840",
+      "icon": "📱"
+    },
+    {
+      "title": "YouTube 频道监控",
+      "category": "社交媒体",
+      "source": "CSDN",
+      "date": "2026-02-22",
+      "summary": "监控关注的 YouTube 频道，有新视频时自动生成摘要，不再手动刷订阅",
+      "url": "https://blog.csdn.net/weixin_47080540/article/details/158312840",
+      "icon": "🎬"
+    },
+    {
+      "title": "自动化工作流编排",
+      "category": "自动化",
+      "source": "七牛云博客园",
+      "date": "2026-03-09",
+      "summary": "组合 Skills 构建完整自动化工作流：网络爬虫 + 文本摘要 + 图文生成 + 邮件发送，原本 30 分钟压缩至分钟级",
+      "url": "https://k.sina.com.cn/article_7857201856_1d45362c00190323gu.html",
+      "icon": "⚙️"
+    },
+    {
+      "title": "每日运营数据早报",
+      "category": "企业自动化",
+      "source": "优游网",
+      "date": "2026-03-11",
+      "summary": "每天自动拉取运营数据，生成早报推送到企业微信群，监控指标异常即时提醒",
+      "url": "https://m.yoyou.com/shouji/openc_278998.html",
+      "icon": "📊"
+    },
+    {
+      "title": "远程代码审查触发",
+      "category": "开发自动化",
+      "source": "优游网",
+      "date": "2026-03-11",
+      "summary": "通过钉钉或飞书远程触发代码审查、自动化测试，监控错误日志自动提交 PR",
+      "url": "https://m.yoyou.com/shouji/openc_278998.html",
+      "icon": "🔧"
+    },
+    {
+      "title": "智能家居控制",
+      "category": "生活助手",
+      "source": "优游网",
+      "date": "2026-03-11",
+      "summary": "用语音控制家电，记住用户习惯，提前准备好一切",
+      "url": "https://m.yoyou.com/shouji/openc_278998.html",
+      "icon": "🏠"
+    },
+    {
+      "title": "AI 专家团每日董事会",
+      "category": "商业顾问",
+      "source": "人人都是产品经理",
+      "date": "2026-02-23",
+      "summary": "多 Agent 协作，每天开董事会，讨论业务决策，碎片化工作流转化为自动化飞轮",
+      "url": "https://www.woshipm.com/ai/6343295.html",
+      "icon": "👔"
+    },
+    {
+      "title": "一人公司运营",
+      "category": "个人效率",
+      "source": "中华网",
+      "date": "2026-03-09",
+      "summary": "通过手机远程指挥 OpenClaw 完成客户需求，实现 AI 员工现实版",
+      "url": "https://news.china.com/socialgd/10000169/20260309/49305763.html",
+      "icon": "💼"
+    }
+  ]
+}
