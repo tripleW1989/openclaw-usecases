@@ -1,0 +1,166 @@
+{
+  "scenarios": [
+    {
+      "title": "Discord多智能体内容工厂",
+      "category": "企业自动化",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "构建三个角色分明的协同智能体，实现从信息获取到成品交付的端到端闭环。Research Agent自动抓取网页/文件并存入向量知识库，Writing Agent生成结构化初稿，Thumbnail Agent调用DALL·E生成配图。",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "💬"
+    },
+    {
+      "title": "家庭服务器SSH自愈系统",
+      "category": "运维自动化",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "家庭服务器SSH自愈系统秒级修复宕机，实现7×24小时不间断作业。",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "🖥️"
+    },
+    {
+      "title": "ERP财务对账智能体",
+      "category": "企业自动化",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": " nightly自动比对银行流水与记账，实现财务对账自动化。",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "💰"
+    },
+    {
+      "title": "企业微信差旅报销审核员",
+      "category": "企业自动化",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "3秒完成OCR+政策核验，实现差旅报销审核自动化。",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "📋"
+    },
+    {
+      "title": "游戏开发流水线",
+      "category": "开发自动化",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "强制“先修Bug”再合入代码的流水线机制。",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "🎮"
+    },
+    {
+      "title": "人力资源简历筛选",
+      "category": "企业自动化",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "自动筛选简历，替代人力资源部门简单高频的重复性工作。",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "👥"
+    },
+    {
+      "title": "市场营销舆情分析",
+      "category": "企业自动化",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "自动抓取互联网上的动态舆情进行分析。",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "📊"
+    },
+    {
+      "title": "工业巡检机器人",
+      "category": "工业制造",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "软通动力将OpenClaw深度融入工业互联与智慧园区产品线，驱动巡检机器人实现7×24小时不间断作业，单次任务Token消耗降低40%。",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🏭"
+    },
+    {
+      "title": "家庭智能管家",
+      "category": "个人效率",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "自主监控孩子屏幕使用时间，数据超时后自动触发提醒并推送到智能音箱播报。扮演私有AI管家角色。",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🏠"
+    },
+    {
+      "title": "网站快速搭建",
+      "category": "个人效率",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "猎豹移动董事长傅盛通过语音指令，指挥OpenClaw在24小时内从零搭建了一个包含59个页面的完整网站。",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🌐"
+    },
+    {
+      "title": "政务服务自动化",
+      "category": "政务服务",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "深圳市龙岗区构建政务类OpenClaw应用，实施强制本地化部署与网络隔离，推动政策解读、业务咨询等服务从人工驱动向智能驱动转型。",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🏛️"
+    },
+    {
+      "title": "汉得智营AI平台集成",
+      "category": "企业自动化",
+      "source": "今日头条",
+      "date": "2026-03-10",
+      "summary": "汉得信息将OpenClaw集成至其智营AI平台，面向财务、HR、供应链等核心业务场景提供解决方案。",
+      "url": "https://www.toutiao.com/article/7615564733231481382/",
+      "icon": "🔧"
+    },
+    {
+      "title": "个人效率场景集合",
+      "category": "个人效率",
+      "source": "博客园",
+      "date": "2026-03-10",
+      "summary": "来自用户社区的20个真实使用场景，覆盖个人效率、开发自动化、健康管理、内容创作四大领域。",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19696096",
+      "icon": "⚡"
+    },
+    {
+      "title": "文件管理自动化",
+      "category": "个人效率",
+      "source": "CSDN",
+      "date": "2026-03-08",
+      "summary": "可以搜索、读取、整理本地文件，如查找电脑里的特定文件（发票等）。",
+      "url": "https://blog.csdn.net/apple_67445472/article/details/158809976",
+      "icon": "📁"
+    },
+    {
+      "title": "智能日程管理",
+      "category": "个人效率",
+      "source": "CSDN",
+      "date": "2026-03-08",
+      "summary": "实现对本地文件系统、浏览器、邮件系统和日程管理的深度自动化操作。",
+      "url": "https://blog.csdn.net/apple_67445472/article/details/158809976",
+      "icon": "📅"
+    },
+    {
+      "title": "浏览器自动化操作",
+      "category": "技术开发",
+      "source": "未来智库",
+      "date": "2026-03-16",
+      "summary": "通过模拟人类操作界面，能像数字员工一样执行重复性任务。",
+      "url": "https://www.vzkoo.com/read/4647468443128303616.html",
+      "icon": "🌍"
+    },
+    {
+      "title": "代码自动生成与PR提交",
+      "category": "开发自动化",
+      "source": "博客园",
+      "date": "2026-03-10",
+      "summary": "能够主动执行操作——发邮件、写代码、自动提PR，而不只是给出回答。",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19696096",
+      "icon": "👨‍💻"
+    },
+    {
+      "title": "智能家居控制",
+      "category": "智能家居",
+      "source": "博客园",
+      "date": "2026-03-10",
+      "summary": "控制智能家居设备，实现自动化生活场景。",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19696096",
+      "icon": "🎛️"
+    }
+  ]
+}
