@@ -1,0 +1,184 @@
+{
+  "scenarios": [
+    {
+      "title": "Discord多智能体内容工厂",
+      "category": "社交媒体",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "在Discord平台构建三个角色分明的协同智能体，实现从信息获取到成品交付的端到端闭环，包括Research Agent、Writing Agent、Thumbnail Agent",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "💬"
+    },
+    {
+      "title": "家庭服务器SSH自愈系统",
+      "category": "DevOps",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "秒级修复宕机的自动化系统",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "🖥️"
+    },
+    {
+      "title": "ERP财务对账智能体",
+      "category": "金融",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "nightly自动比对银行流水与记账",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "💰"
+    },
+    {
+      "title": "企业微信差旅报销审核员",
+      "category": "企业办公",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "3秒完成OCR+政策核验",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "✅"
+    },
+    {
+      "title": "游戏开发流水线",
+      "category": "开发工具",
+      "source": "php中文网",
+      "date": "2026-03-23",
+      "summary": "强制先修Bug再合入代码的工作流",
+      "url": "https://www.php.cn/faq/2244689.html",
+      "icon": "🎮"
+    },
+    {
+      "title": "awesome-openclaw-usecases用例库",
+      "category": "资源汇总",
+      "source": "CSDN",
+      "date": "2026-03-14",
+      "summary": "30个真实案例，划分为社交媒体、创意与构建、基础设施与DevOps、生产力、研究与学习、金融与交易六大板块",
+      "url": "https://blog.csdn.net/lxx309707872/article/details/159049671",
+      "icon": "📚"
+    },
+    {
+      "title": "电商商品图批量OCR提价比对",
+      "category": "电商",
+      "source": "php中文网",
+      "date": "2026-03-22",
+      "summary": "1.8秒内完成单张图片的区域裁剪、文字识别、数字校验与结构化输出",
+      "url": "https://www.php.cn/faq/2238673.html",
+      "icon": "🛒"
+    },
+    {
+      "title": "政务APP表单自动填报回填",
+      "category": "政务",
+      "source": "php中文网",
+      "date": "2026-03-22",
+      "summary": "利用控件树遍历+图像匹配双路策略，实现字段定位与模拟输入闭环",
+      "url": "https://www.php.cn/faq/2238673.html",
+      "icon": "🏛️"
+    },
+    {
+      "title": "工业弹窗拦截",
+      "category": "工业",
+      "source": "php中文网",
+      "date": "2026-03-22",
+      "summary": "工业场景自动化交互",
+      "url": "https://www.php.cn/faq/2238673.html",
+      "icon": "🏭"
+    },
+    {
+      "title": "物流面单分拣",
+      "category": "物流",
+      "source": "php中文网",
+      "date": "2026-03-22",
+      "summary": "物流行业自动化分拣",
+      "url": "https://www.php.cn/faq/2238673.html",
+      "icon": "📦"
+    },
+    {
+      "title": "银行敏感信息遮蔽",
+      "category": "金融",
+      "source": "php中文网",
+      "date": "2026-03-22",
+      "summary": "银行业务数据安全处理",
+      "url": "https://www.php.cn/faq/2238673.html",
+      "icon": "🔒"
+    },
+    {
+      "title": "日常工作流优化",
+      "category": "效率提升",
+      "source": "php中文网",
+      "date": "2026-03-26",
+      "summary": "通过模块化拆分、预置模板库、异步并行执行、条件缓存及日志分级过滤五项措施优化",
+      "url": "https://www.php.cn/faq/2258343.html",
+      "icon": "⚡"
+    },
+    {
+      "title": "新媒体编辑团队AI化",
+      "category": "内容创作",
+      "source": "网易",
+      "date": "2026-04-07",
+      "summary": "一个人就是一支团队，资讯收集整理、选题会、策划会、稿件撰写、审稿、排版/发布、复盘全流程自动化",
+      "url": "https://www.163.com/dy/article/KPTFQ32A0553DB9N.html",
+      "icon": "✍️"
+    },
+    {
+      "title": "无人机自动化",
+      "category": "智能硬件",
+      "source": "腾讯网",
+      "date": "2026-03-17",
+      "summary": "任务规划自动化、起降与飞行自动化、作业执行自动化、数据采集与传输自动化",
+      "url": "https://news.qq.com/rain/a/20260317A02URF00",
+      "icon": "🚁"
+    },
+    {
+      "title": "Windows一键部署教程",
+      "category": "部署教程",
+      "source": "掘金",
+      "date": "2026-03-28",
+      "summary": "面向本地自动化场景的轻量级执行框架，零基础搭建本地AI智能体",
+      "url": "https://juejin.cn/post/7621784210573099049",
+      "icon": "🪟"
+    },
+    {
+      "title": "AI自动化内容创作",
+      "category": "内容创作",
+      "source": "CSDN",
+      "date": "2026-03-17",
+      "summary": "从零到自动化内容创作者的蜕变之路，零基础一个月实现",
+      "url": "https://blog.csdn.net/goodzz222/article/details/159166566",
+      "icon": "🎨"
+    },
+    {
+      "title": "QQ集成AI助理",
+      "category": "社交媒体",
+      "source": "博客园",
+      "date": "2026-03-15",
+      "summary": "部署并集成QQ搭建自动化AI助理",
+      "url": "https://www.cnblogs.com/xuxueli/p/19719206",
+      "icon": "🐧"
+    },
+    {
+      "title": "智能投研Agent团队",
+      "category": "金融",
+      "source": "未来智库",
+      "date": "2026-03-16",
+      "summary": "范式演进:从辅助工具到数字员工",
+      "url": "https://www.vzkoo.com/read/4647461793793314816.html",
+      "icon": "📊"
+    },
+    {
+      "title": "EasyClaw桌面自动化",
+      "category": "效率提升",
+      "source": "观猹",
+      "date": "2026-03-19",
+      "summary": "原生桌面驱动与极简安装体验，双击运行即可在Windows和macOS上开启自动化工作流",
+      "url": "https://watcha.cn/products/1641",
+      "icon": "🖱️"
+    },
+    {
+      "title": "AutoClaw桌面客户端",
+      "category": "效率提升",
+      "source": "游侠网",
+      "date": "2026-03-24",
+      "summary": "国内首个真一键安装本地版OpenClaw桌面客户端",
+      "url": "https://soft.ali213.net/down/45611.html",
+      "icon": "📦"
+    }
+  ]
+}

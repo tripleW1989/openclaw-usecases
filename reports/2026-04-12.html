@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenClaw 场景日报 - 2026-04-12</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #2563eb;
+      --primary-light: #3b82f6;
+      --cta: #f97316;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --shadow: rgba(0,0,0,0.06);
+    }
+    body {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .header {
+      background: var(--card-bg);
+      padding: 48px 40px;
+      border-radius: 4px;
+      margin-bottom: 32px;
+      box-shadow: 0 1px 3px var(--shadow);
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .header h1 {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .header h1 span { color: var(--primary); }
+    .header .date {
+      font-size: 18px;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+    .header .meta {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .header .meta-item {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 12px;
+    }
+    .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+      border-radius: 2px;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .scenario-card {
+      background: var(--card-bg);
+      border-radius: 2px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px var(--shadow);
+      transition: all 0.25s ease;
+      border-left: 3px solid var(--primary);
+    }
+    .scenario-card:hover {
+      box-shadow: 0 4px 12px var(--shadow);
+      border-left-color: var(--cta);
+    }
+    .scenario-card h2 {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+    }
+    .scenario-card h2::before {
+      content: "✦";
+      color: var(--primary);
+      font-size: 14px;
+    }
+    .scenario-card .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .scenario-card .tag {
+      background: transparent;
+      color: var(--text-light);
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .scenario-card .tag.source {
+      background: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .scenario-card .summary {
+      line-height: 1.8;
+      color: var(--text);
+      font-size: 15px;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      white-space: pre-line;
+    }
+    .scenario-card .url {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--cta);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 14px;
+      padding: 8px 16px;
+      border: 1px solid var(--primary);
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+    .scenario-card .url:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    .empty-state {
+      background: rgba(255,255,255,0.95);
+      padding: 60px 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    .empty-state h2 { font-size: 24px; color: #667eea; margin-bottom: 10px; }
+    .empty-state p { color: #666; font-size: 15px; }
+    .footer {
+      text-align: center;
+      color: rgba(255,255,255,0.9);
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="nav-links">
+        <a href="index.html">📊 总览汇总</a>
+        <a href="archive.html">📚 归档索引</a>
+        <a href="https://github.com/tripleW1989/openclaw-usecases" target="_blank">🐙 GitHub</a>
+      </div>
+      <h1>🦞 OpenClaw 场景日报</h1>
+      <p style="color: #666; margin-top: 10px;">每天自动收集 OpenClaw 实际应用案例</p>
+      <div class="meta">
+        <span class="meta-item">📅 2026-04-12</span>
+        <span class="meta-item">🔍 新增 20 个场景</span>
+      </div>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>💬</span> Discord多智能体内容工厂</h2>
+      <div class="meta">
+        <span class="tag">社交媒体</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">在Discord平台构建三个角色分明的协同智能体，实现从信息获取到成品交付的端到端闭环，包括Research Agent、Writing Agent、Thumbnail Agent</div>
+      <a href="https://www.php.cn/faq/2244689.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🖥️</span> 家庭服务器SSH自愈系统</h2>
+      <div class="meta">
+        <span class="tag">DevOps</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">秒级修复宕机的自动化系统</div>
+      <a href="https://www.php.cn/faq/2244689.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>💰</span> ERP财务对账智能体</h2>
+      <div class="meta">
+        <span class="tag">金融</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">nightly自动比对银行流水与记账</div>
+      <a href="https://www.php.cn/faq/2244689.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>✅</span> 企业微信差旅报销审核员</h2>
+      <div class="meta">
+        <span class="tag">企业办公</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">3秒完成OCR+政策核验</div>
+      <a href="https://www.php.cn/faq/2244689.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎮</span> 游戏开发流水线</h2>
+      <div class="meta">
+        <span class="tag">开发工具</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">强制先修Bug再合入代码的工作流</div>
+      <a href="https://www.php.cn/faq/2244689.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📚</span> awesome-openclaw-usecases用例库</h2>
+      <div class="meta">
+        <span class="tag">资源汇总</span>
+        <span class="tag source">CSDN</span>
+      </div>
+      <div class="summary">30个真实案例，划分为社交媒体、创意与构建、基础设施与DevOps、生产力、研究与学习、金融与交易六大板块</div>
+      <a href="https://blog.csdn.net/lxx309707872/article/details/159049671" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🛒</span> 电商商品图批量OCR提价比对</h2>
+      <div class="meta">
+        <span class="tag">电商</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">1.8秒内完成单张图片的区域裁剪、文字识别、数字校验与结构化输出</div>
+      <a href="https://www.php.cn/faq/2238673.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🏛️</span> 政务APP表单自动填报回填</h2>
+      <div class="meta">
+        <span class="tag">政务</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">利用控件树遍历+图像匹配双路策略，实现字段定位与模拟输入闭环</div>
+      <a href="https://www.php.cn/faq/2238673.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🏭</span> 工业弹窗拦截</h2>
+      <div class="meta">
+        <span class="tag">工业</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">工业场景自动化交互</div>
+      <a href="https://www.php.cn/faq/2238673.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📦</span> 物流面单分拣</h2>
+      <div class="meta">
+        <span class="tag">物流</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">物流行业自动化分拣</div>
+      <a href="https://www.php.cn/faq/2238673.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🔒</span> 银行敏感信息遮蔽</h2>
+      <div class="meta">
+        <span class="tag">金融</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">银行业务数据安全处理</div>
+      <a href="https://www.php.cn/faq/2238673.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>⚡</span> 日常工作流优化</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">php中文网</span>
+      </div>
+      <div class="summary">通过模块化拆分、预置模板库、异步并行执行、条件缓存及日志分级过滤五项措施优化</div>
+      <a href="https://www.php.cn/faq/2258343.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>✍️</span> 新媒体编辑团队AI化</h2>
+      <div class="meta">
+        <span class="tag">内容创作</span>
+        <span class="tag source">网易</span>
+      </div>
+      <div class="summary">一个人就是一支团队，资讯收集整理、选题会、策划会、稿件撰写、审稿、排版/发布、复盘全流程自动化</div>
+      <a href="https://www.163.com/dy/article/KPTFQ32A0553DB9N.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🚁</span> 无人机自动化</h2>
+      <div class="meta">
+        <span class="tag">智能硬件</span>
+        <span class="tag source">腾讯网</span>
+      </div>
+      <div class="summary">任务规划自动化、起降与飞行自动化、作业执行自动化、数据采集与传输自动化</div>
+      <a href="https://news.qq.com/rain/a/20260317A02URF00" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🪟</span> Windows一键部署教程</h2>
+      <div class="meta">
+        <span class="tag">部署教程</span>
+        <span class="tag source">掘金</span>
+      </div>
+      <div class="summary">面向本地自动化场景的轻量级执行框架，零基础搭建本地AI智能体</div>
+      <a href="https://juejin.cn/post/7621784210573099049" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎨</span> AI自动化内容创作</h2>
+      <div class="meta">
+        <span class="tag">内容创作</span>
+        <span class="tag source">CSDN</span>
+      </div>
+      <div class="summary">从零到自动化内容创作者的蜕变之路，零基础一个月实现</div>
+      <a href="https://blog.csdn.net/goodzz222/article/details/159166566" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🐧</span> QQ集成AI助理</h2>
+      <div class="meta">
+        <span class="tag">社交媒体</span>
+        <span class="tag source">博客园</span>
+      </div>
+      <div class="summary">部署并集成QQ搭建自动化AI助理</div>
+      <a href="https://www.cnblogs.com/xuxueli/p/19719206" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📊</span> 智能投研Agent团队</h2>
+      <div class="meta">
+        <span class="tag">金融</span>
+        <span class="tag source">未来智库</span>
+      </div>
+      <div class="summary">范式演进:从辅助工具到数字员工</div>
+      <a href="https://www.vzkoo.com/read/4647461793793314816.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🖱️</span> EasyClaw桌面自动化</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">观猹</span>
+      </div>
+      <div class="summary">原生桌面驱动与极简安装体验，双击运行即可在Windows和macOS上开启自动化工作流</div>
+      <a href="https://watcha.cn/products/1641" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📦</span> AutoClaw桌面客户端</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">游侠网</span>
+      </div>
+      <div class="summary">国内首个真一键安装本地版OpenClaw桌面客户端</div>
+      <a href="https://soft.ali213.net/down/45611.html" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="footer">
+      <p>🤖 Generated by OpenClaw Auto Collector</p>
+      <p><a href="index.html" style="color: #fff;">📊 查看所有场景 →</a></p>
+    </div>
+  </div>
+</body>
+</html>
