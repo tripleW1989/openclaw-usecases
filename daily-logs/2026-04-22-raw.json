@@ -1,0 +1,381 @@
+{
+  "scenarios": [
+    {
+      "title": "Daily Reddit Digest",
+      "category": "社交媒体",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "根据用户偏好策展你最喜欢的 Reddit 子版块摘要",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-reddit-digest.md",
+      "icon": "📱"
+    },
+    {
+      "title": "Daily YouTube Digest",
+      "category": "社交媒体",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "获取你关注的频道的每日新视频摘要——再也不会错过你喜欢的创作者的内容",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-youtube-digest.md",
+      "icon": "📺"
+    },
+    {
+      "title": "X Account Analysis",
+      "category": "社交媒体",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "对你的 X 账户进行定性分析",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-account-analysis.md",
+      "icon": "🐦"
+    },
+    {
+      "title": "Multi-Source Tech News Digest",
+      "category": "信息聚合",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "通过自然语言自动聚合并提供来自109+来源（RSS、Twitter/X、GitHub、网页搜索）的质量评分技术新闻",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-source-tech-news-digest.md",
+      "icon": "📰"
+    },
+    {
+      "title": "X/Twitter Automation",
+      "category": "社交媒体",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "发布推文、回复、点赞、转发、关注、DM、搜索、提取数据、运行抽奖活动——全部通过 TweetClaw 插件在聊天中完成",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-twitter-automation.md",
+      "icon": "🤖"
+    },
+    {
+      "title": "Goal-Driven Autonomous Tasks",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "倾诉你的目标，让你的智能体自主生成、安排并完成每日任务——包括通宵构建惊喜迷你应用",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/overnight-mini-app-builder.md",
+      "icon": "🎯"
+    },
+    {
+      "title": "YouTube Content Pipeline",
+      "category": "内容创作",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "为 YouTube 频道自动化视频创意探索、研究和跟踪",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/youtube-content-pipeline.md",
+      "icon": "🎬"
+    },
+    {
+      "title": "Multi-Agent Content Factory",
+      "category": "内容创作",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "在 Discord 中运行多智能体内容流水线——研究、写作和缩略图智能体在专用频道中协作",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/content-factory.md",
+      "icon": "🏭"
+    },
+    {
+      "title": "Autonomous Game Dev Pipeline",
+      "category": "开发工具",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "教育游戏开发生命周期全管理：从积压选择到实现、注册、文档和 git 提交。强制执行「Bug优先」策略",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-game-dev-pipeline.md",
+      "icon": "🎮"
+    },
+    {
+      "title": "Podcast Production Pipeline",
+      "category": "内容创作",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "自动化播客完整工作流——嘉宾研究、剧集大纲、节目笔记和社交媒体推广——从主题到发布就绪资源",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/podcast-production-pipeline.md",
+      "icon": "🎙️"
+    },
+    {
+      "title": "AI Video Editing via Chat",
+      "category": "内容创作",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "用自然语言描述更改来编辑视频——剪辑、合并、添加音乐、字幕、调色、裁剪竖屏。无需时间线，无需 GUI",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/ai-video-editing.md",
+      "icon": "🎥"
+    },
+    {
+      "title": "n8n Workflow Orchestration",
+      "category": "工作流自动化",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "通过 webhooks 将 API 调用委托给 n8n 工作流——智能体从不接触凭证，每个集成都是可视化和可锁定的",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/n8n-workflow-orchestration.md",
+      "icon": "🔄"
+    },
+    {
+      "title": "Self-Healing Home Server",
+      "category": "DevOps",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "运行具有 SSH 访问权限的始终在线基础设施智能体，具有自动化 cron 作业和跨家庭网络的自愈能力",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/self-healing-home-server.md",
+      "icon": "🖥️"
+    },
+    {
+      "title": "Autonomous Project Management",
+      "category": "项目管理",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "使用 STATE.yaml 模式协调多智能体项目——子智能体并行工作，无需编排器开销",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-project-management.md",
+      "icon": "📊"
+    },
+    {
+      "title": "Multi-Channel AI Customer Service",
+      "category": "客户服务",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "将 WhatsApp、Instagram、Email 和 Google Reviews 统一到一个 AI 驱动的收件箱，提供 24/7 自动回复",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-customer-service.md",
+      "icon": "💬"
+    },
+    {
+      "title": "Phone-Based Personal Assistant",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "通过语音通话访问你的 AI 智能体，任何电话都能获得免提语音帮助",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-based-personal-assistant.md",
+      "icon": "📞"
+    },
+    {
+      "title": "Inbox De-clutter",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "总结新闻通讯并以邮件形式发送摘要给你",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/inbox-declutter.md",
+      "icon": "📧"
+    },
+    {
+      "title": "Personal CRM",
+      "category": "CRM 客户管理",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "自动从你的邮件和日历中发现和跟踪联系人，支持自然语言查询",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/personal-crm.md",
+      "icon": "👥"
+    },
+    {
+      "title": "Health & Symptom Tracker",
+      "category": "医疗健康",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "追踪食物摄入和症状以识别诱因，并提供定时签到提醒",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/health-symptom-tracker.md",
+      "icon": "🏥"
+    },
+    {
+      "title": "Multi-Channel Personal Assistant",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "通过单个 AI 助手将任务路由到 Telegram、Slack、邮件和日历",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-assistant.md",
+      "icon": "📱"
+    },
+    {
+      "title": "Project State Management",
+      "category": "项目管理",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "具有自动上下文捕获的事件驱动项目跟踪，替代静态看板",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/project-state-management.md",
+      "icon": "📋"
+    },
+    {
+      "title": "Dynamic Dashboard",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "实时仪表板，具有从 API、数据库和社交媒体的并行数据获取",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/dynamic-dashboard.md",
+      "icon": "📈"
+    },
+    {
+      "title": "Todoist Task Manager",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "通过将推理和进度日志同步到 Todoist 来最大化智能体透明度",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/todoist-task-manager.md",
+      "icon": "✅"
+    },
+    {
+      "title": "Family Calendar & Household Assistant",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "将所有家庭日历汇总到早间简报，监控消息中的约会，并管理家庭库存",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/family-calendar-household-assistant.md",
+      "icon": "👨‍👩‍👧"
+    },
+    {
+      "title": "Multi-Agent Specialized Team",
+      "category": "AI 专家团",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "通过单个 Telegram 聊天运行多个专业智能体（策略、开发、营销、商务）作为协调团队",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-agent-team.md",
+      "icon": "👥"
+    },
+    {
+      "title": "OpenClaw as Desktop Cowork",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "将 OpenClaw 用作桌面协作应用——统一 UI、多智能体、MCP 一次、WebUI/Telegram/飞书/钉钉。当 OpenClaw 宕机时，使用内置的 OpenClaw 部署专家通过 Telegram 或 WebUI 远程修复（安装、检测、维修）",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/aionui-cowork-desktop.md",
+      "icon": "🖥️"
+    },
+    {
+      "title": "Custom Morning Brief",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "每天早晨收到完全定制的简报——新闻、任务、内容草稿和 AI 推荐行动——以短信形式发送",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/custom-morning-brief.md",
+      "icon": "🌅"
+    },
+    {
+      "title": "Automated Meeting Notes & Action Items",
+      "category": "工作效率",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "将会议记录转化为结构化摘要，并自动在 Jira、Linear 或 Todoist 中创建任务——分配给正确的人",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/meeting-notes-action-items.md",
+      "icon": "📝"
+    },
+    {
+      "title": "Habit Tracker & Accountability Coach",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "通过 Telegram 或 SMS 进行主动的每日签到，跟踪习惯、保持连续记录，并根据你的进度调整语气",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/habit-tracker-accountability-coach.md",
+      "icon": "🎯"
+    },
+    {
+      "title": "Second Brain",
+      "category": "知识管理",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "向你的机器人发送任何要记住的内容，然后在一个自定义的 Next.js 仪表板中搜索你所有的记忆",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/second-brain.md",
+      "icon": "🧠"
+    },
+    {
+      "title": "Event Guest Confirmation",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "逐个呼叫活动宾客确认出席，收集笔记并编译摘要——通过 AI 语音通话完全自动化",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/event-guest-confirmation.md",
+      "icon": "📞"
+    },
+    {
+      "title": "Phone Call Notifications",
+      "category": "效率提升",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "将你的智能体警报转化为真正的电话——早间简报、价格下降、紧急邮件——支持双向对话",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-call-notifications.md",
+      "icon": "☎️"
+    },
+    {
+      "title": "Local CRM Framework",
+      "category": "CRM 客户管理",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "使用 npx denchclaw 将 OpenClaw 转变为完全本地的 CRM 和销售自动化平台——DuckDB、浏览器自动化、多视图 UI 和自然语言查询",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/local-crm-framework.md",
+      "icon": "💼"
+    },
+    {
+      "title": "AI Earnings Tracker",
+      "category": "金融投资",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "跟踪科技/AI 财报，提供自动预览、警报和详细摘要",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/earnings-tracker.md",
+      "icon": "📈"
+    },
+    {
+      "title": "Personal Knowledge Base (RAG)",
+      "category": "知识管理",
+      "source": "awesome-openclaw-usecases",
+      "summary": "通过将 URL、推文和文章投入到聊天中来构建可搜索的知识库",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/knowledge-base-rag.md",
+      "icon": "📚"
+    },
+    {
+      "title": "Market Research & Product Factory",
+      "category": "市场研究",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "使用 Last 30 Days 技能从 Reddit 和 X 挖掘真实痛点，然后让 OpenClaw 构建解决这些问题的 MVP",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/market-research-product-factory.md",
+      "icon": "🔍"
+    },
+    {
+      "title": "Pre-Build Idea Validator",
+      "category": "开发工具",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "在构建任何新东西之前自动扫描 GitHub、HN、npm、PyPI 和 Product Hunt——如果领域拥挤就停止，如果是空白的就继续",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/pre-build-idea-validator.md",
+      "icon": "✅"
+    },
+    {
+      "title": "Semantic Memory Search",
+      "category": "知识管理",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "使用混合检索和自动同步为你的 OpenClaw markdown 记忆文件添加向量驱动的语义搜索",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/semantic-memory-search.md",
+      "icon": "🔎"
+    },
+    {
+      "title": "arXiv Paper Reader",
+      "category": "研究学习",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "通过 ID 获取、浏览部分、比较摘要和获取 AI 摘要来对话式阅读和分析 arXiv 论文",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/arxiv-paper-reader.md",
+      "icon": "📄"
+    },
+    {
+      "title": "LaTeX Paper Writing",
+      "category": "研究学习",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "对话式撰写和编译 LaTeX 论文，实时 PDF 预览——无需本地 TeX 安装",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/latex-paper-writing.md",
+      "icon": "📝"
+    },
+    {
+      "title": "HF Papers Research Discovery",
+      "category": "研究学习",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "在 Hugging Face 上发现热门 ML 论文，按点赞数分类，并通过 arXiv 深度阅读——全部对话式完成",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/hf-papers-research-discovery.md",
+      "icon": "🤗"
+    },
+    {
+      "title": "Polymarket Autopilot",
+      "category": "金融投资",
+      "source": "awesome-openclaw-usecases",
+      "date": "2026-04-22",
+      "summary": "预测市场的自动化模拟交易，具有回测、策略分析和每日性能报告",
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/polymarket-autopilot.md",
+      "icon": "🎰"
+    }
+  ]
+}

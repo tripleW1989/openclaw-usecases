@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenClaw 场景日报 - 2026-04-22</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #2563eb;
+      --primary-light: #3b82f6;
+      --cta: #f97316;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-light: #64748b;
+      --border: #e2e8f0;
+      --shadow: rgba(0,0,0,0.06);
+    }
+    body {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .header {
+      background: var(--card-bg);
+      padding: 48px 40px;
+      border-radius: 4px;
+      margin-bottom: 32px;
+      box-shadow: 0 1px 3px var(--shadow);
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+    .header h1 {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .header h1 span { color: var(--primary); }
+    .header .date {
+      font-size: 18px;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+    .header .meta {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .header .meta-item {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 12px;
+    }
+    .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+      border-radius: 2px;
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .scenario-card {
+      background: var(--card-bg);
+      border-radius: 2px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px var(--shadow);
+      transition: all 0.25s ease;
+      border-left: 3px solid var(--primary);
+    }
+    .scenario-card:hover {
+      box-shadow: 0 4px 12px var(--shadow);
+      border-left-color: var(--cta);
+    }
+    .scenario-card h2 {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+    }
+    .scenario-card h2::before {
+      content: "✦";
+      color: var(--primary);
+      font-size: 14px;
+    }
+    .scenario-card .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .scenario-card .tag {
+      background: transparent;
+      color: var(--text-light);
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .scenario-card .tag.source {
+      background: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .scenario-card .summary {
+      line-height: 1.8;
+      color: var(--text);
+      font-size: 15px;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      white-space: pre-line;
+    }
+    .scenario-card .url {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--cta);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 14px;
+      padding: 8px 16px;
+      border: 1px solid var(--primary);
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+    .scenario-card .url:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    .empty-state {
+      background: rgba(255,255,255,0.95);
+      padding: 60px 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    .empty-state h2 { font-size: 24px; color: #667eea; margin-bottom: 10px; }
+    .empty-state p { color: #666; font-size: 15px; }
+    .footer {
+      text-align: center;
+      color: rgba(255,255,255,0.9);
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="nav-links">
+        <a href="index.html">📊 总览汇总</a>
+        <a href="archive.html">📚 归档索引</a>
+        <a href="https://github.com/tripleW1989/openclaw-usecases" target="_blank">🐙 GitHub</a>
+      </div>
+      <h1>🦞 OpenClaw 场景日报</h1>
+      <p style="color: #666; margin-top: 10px;">每天自动收集 OpenClaw 实际应用案例</p>
+      <div class="meta">
+        <span class="meta-item">📅 2026-04-22</span>
+        <span class="meta-item">🔍 新增 42 个场景</span>
+      </div>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📱</span> Daily Reddit Digest</h2>
+      <div class="meta">
+        <span class="tag">社交媒体</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">根据用户偏好策展你最喜欢的 Reddit 子版块摘要</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-reddit-digest.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📺</span> Daily YouTube Digest</h2>
+      <div class="meta">
+        <span class="tag">社交媒体</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">获取你关注的频道的每日新视频摘要——再也不会错过你喜欢的创作者的内容</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-youtube-digest.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🐦</span> X Account Analysis</h2>
+      <div class="meta">
+        <span class="tag">社交媒体</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">对你的 X 账户进行定性分析</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-account-analysis.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📰</span> Multi-Source Tech News Digest</h2>
+      <div class="meta">
+        <span class="tag">信息聚合</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过自然语言自动聚合并提供来自109+来源（RSS、Twitter/X、GitHub、网页搜索）的质量评分技术新闻</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-source-tech-news-digest.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🤖</span> X/Twitter Automation</h2>
+      <div class="meta">
+        <span class="tag">社交媒体</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">发布推文、回复、点赞、转发、关注、DM、搜索、提取数据、运行抽奖活动——全部通过 TweetClaw 插件在聊天中完成</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-twitter-automation.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎯</span> Goal-Driven Autonomous Tasks</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">倾诉你的目标，让你的智能体自主生成、安排并完成每日任务——包括通宵构建惊喜迷你应用</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/overnight-mini-app-builder.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎬</span> YouTube Content Pipeline</h2>
+      <div class="meta">
+        <span class="tag">内容创作</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">为 YouTube 频道自动化视频创意探索、研究和跟踪</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/youtube-content-pipeline.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🏭</span> Multi-Agent Content Factory</h2>
+      <div class="meta">
+        <span class="tag">内容创作</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">在 Discord 中运行多智能体内容流水线——研究、写作和缩略图智能体在专用频道中协作</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/content-factory.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎮</span> Autonomous Game Dev Pipeline</h2>
+      <div class="meta">
+        <span class="tag">开发工具</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">教育游戏开发生命周期全管理：从积压选择到实现、注册、文档和 git 提交。强制执行「Bug优先」策略</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-game-dev-pipeline.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎙️</span> Podcast Production Pipeline</h2>
+      <div class="meta">
+        <span class="tag">内容创作</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">自动化播客完整工作流——嘉宾研究、剧集大纲、节目笔记和社交媒体推广——从主题到发布就绪资源</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/podcast-production-pipeline.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎥</span> AI Video Editing via Chat</h2>
+      <div class="meta">
+        <span class="tag">内容创作</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">用自然语言描述更改来编辑视频——剪辑、合并、添加音乐、字幕、调色、裁剪竖屏。无需时间线，无需 GUI</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/ai-video-editing.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🔄</span> n8n Workflow Orchestration</h2>
+      <div class="meta">
+        <span class="tag">工作流自动化</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过 webhooks 将 API 调用委托给 n8n 工作流——智能体从不接触凭证，每个集成都是可视化和可锁定的</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/n8n-workflow-orchestration.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🖥️</span> Self-Healing Home Server</h2>
+      <div class="meta">
+        <span class="tag">DevOps</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">运行具有 SSH 访问权限的始终在线基础设施智能体，具有自动化 cron 作业和跨家庭网络的自愈能力</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/self-healing-home-server.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📊</span> Autonomous Project Management</h2>
+      <div class="meta">
+        <span class="tag">项目管理</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">使用 STATE.yaml 模式协调多智能体项目——子智能体并行工作，无需编排器开销</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-project-management.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>💬</span> Multi-Channel AI Customer Service</h2>
+      <div class="meta">
+        <span class="tag">客户服务</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">将 WhatsApp、Instagram、Email 和 Google Reviews 统一到一个 AI 驱动的收件箱，提供 24/7 自动回复</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-customer-service.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📞</span> Phone-Based Personal Assistant</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过语音通话访问你的 AI 智能体，任何电话都能获得免提语音帮助</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-based-personal-assistant.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📧</span> Inbox De-clutter</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">总结新闻通讯并以邮件形式发送摘要给你</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/inbox-declutter.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>👥</span> Personal CRM</h2>
+      <div class="meta">
+        <span class="tag">CRM 客户管理</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">自动从你的邮件和日历中发现和跟踪联系人，支持自然语言查询</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/personal-crm.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🏥</span> Health & Symptom Tracker</h2>
+      <div class="meta">
+        <span class="tag">医疗健康</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">追踪食物摄入和症状以识别诱因，并提供定时签到提醒</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/health-symptom-tracker.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📱</span> Multi-Channel Personal Assistant</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过单个 AI 助手将任务路由到 Telegram、Slack、邮件和日历</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-assistant.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📋</span> Project State Management</h2>
+      <div class="meta">
+        <span class="tag">项目管理</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">具有自动上下文捕获的事件驱动项目跟踪，替代静态看板</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/project-state-management.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📈</span> Dynamic Dashboard</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">实时仪表板，具有从 API、数据库和社交媒体的并行数据获取</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/dynamic-dashboard.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>✅</span> Todoist Task Manager</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过将推理和进度日志同步到 Todoist 来最大化智能体透明度</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/todoist-task-manager.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>👨‍👩‍👧</span> Family Calendar & Household Assistant</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">将所有家庭日历汇总到早间简报，监控消息中的约会，并管理家庭库存</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/family-calendar-household-assistant.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>👥</span> Multi-Agent Specialized Team</h2>
+      <div class="meta">
+        <span class="tag">AI 专家团</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过单个 Telegram 聊天运行多个专业智能体（策略、开发、营销、商务）作为协调团队</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-agent-team.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🖥️</span> OpenClaw as Desktop Cowork</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">将 OpenClaw 用作桌面协作应用——统一 UI、多智能体、MCP 一次、WebUI/Telegram/飞书/钉钉。当 OpenClaw 宕机时，使用内置的 OpenClaw 部署专家通过 Telegram 或 WebUI 远程修复（安装、检测、维修）</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/aionui-cowork-desktop.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🌅</span> Custom Morning Brief</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">每天早晨收到完全定制的简报——新闻、任务、内容草稿和 AI 推荐行动——以短信形式发送</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/custom-morning-brief.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📝</span> Automated Meeting Notes & Action Items</h2>
+      <div class="meta">
+        <span class="tag">工作效率</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">将会议记录转化为结构化摘要，并自动在 Jira、Linear 或 Todoist 中创建任务——分配给正确的人</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/meeting-notes-action-items.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎯</span> Habit Tracker & Accountability Coach</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过 Telegram 或 SMS 进行主动的每日签到，跟踪习惯、保持连续记录，并根据你的进度调整语气</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/habit-tracker-accountability-coach.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🧠</span> Second Brain</h2>
+      <div class="meta">
+        <span class="tag">知识管理</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">向你的机器人发送任何要记住的内容，然后在一个自定义的 Next.js 仪表板中搜索你所有的记忆</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/second-brain.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📞</span> Event Guest Confirmation</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">逐个呼叫活动宾客确认出席，收集笔记并编译摘要——通过 AI 语音通话完全自动化</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/event-guest-confirmation.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>☎️</span> Phone Call Notifications</h2>
+      <div class="meta">
+        <span class="tag">效率提升</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">将你的智能体警报转化为真正的电话——早间简报、价格下降、紧急邮件——支持双向对话</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-call-notifications.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>💼</span> Local CRM Framework</h2>
+      <div class="meta">
+        <span class="tag">CRM 客户管理</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">使用 npx denchclaw 将 OpenClaw 转变为完全本地的 CRM 和销售自动化平台——DuckDB、浏览器自动化、多视图 UI 和自然语言查询</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/local-crm-framework.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📈</span> AI Earnings Tracker</h2>
+      <div class="meta">
+        <span class="tag">金融投资</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">跟踪科技/AI 财报，提供自动预览、警报和详细摘要</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/earnings-tracker.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📚</span> Personal Knowledge Base (RAG)</h2>
+      <div class="meta">
+        <span class="tag">知识管理</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过将 URL、推文和文章投入到聊天中来构建可搜索的知识库</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/knowledge-base-rag.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🔍</span> Market Research & Product Factory</h2>
+      <div class="meta">
+        <span class="tag">市场研究</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">使用 Last 30 Days 技能从 Reddit 和 X 挖掘真实痛点，然后让 OpenClaw 构建解决这些问题的 MVP</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/market-research-product-factory.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>✅</span> Pre-Build Idea Validator</h2>
+      <div class="meta">
+        <span class="tag">开发工具</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">在构建任何新东西之前自动扫描 GitHub、HN、npm、PyPI 和 Product Hunt——如果领域拥挤就停止，如果是空白的就继续</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/pre-build-idea-validator.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🔎</span> Semantic Memory Search</h2>
+      <div class="meta">
+        <span class="tag">知识管理</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">使用混合检索和自动同步为你的 OpenClaw markdown 记忆文件添加向量驱动的语义搜索</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/semantic-memory-search.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📄</span> arXiv Paper Reader</h2>
+      <div class="meta">
+        <span class="tag">研究学习</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">通过 ID 获取、浏览部分、比较摘要和获取 AI 摘要来对话式阅读和分析 arXiv 论文</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/arxiv-paper-reader.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>📝</span> LaTeX Paper Writing</h2>
+      <div class="meta">
+        <span class="tag">研究学习</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">对话式撰写和编译 LaTeX 论文，实时 PDF 预览——无需本地 TeX 安装</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/latex-paper-writing.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🤗</span> HF Papers Research Discovery</h2>
+      <div class="meta">
+        <span class="tag">研究学习</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">在 Hugging Face 上发现热门 ML 论文，按点赞数分类，并通过 arXiv 深度阅读——全部对话式完成</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/hf-papers-research-discovery.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="scenario-card">
+      <h2><span>🎰</span> Polymarket Autopilot</h2>
+      <div class="meta">
+        <span class="tag">金融投资</span>
+        <span class="tag source">awesome-openclaw-usecases</span>
+      </div>
+      <div class="summary">预测市场的自动化模拟交易，具有回测、策略分析和每日性能报告</div>
+      <a href="https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/polymarket-autopilot.md" target="_blank" class="url">🔗 阅读原文 →</a>
+    </div>
+    
+    <div class="footer">
+      <p>🤖 Generated by OpenClaw Auto Collector</p>
+      <p><a href="index.html" style="color: #fff;">📊 查看所有场景 →</a></p>
+    </div>
+  </div>
+</body>
+</html>
